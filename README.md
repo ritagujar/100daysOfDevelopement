@@ -10,4 +10,4 @@ Block vs Inline Block,
 Hyperlinks,
 
 Day2 -
-Created Mini-Project, Semantic Tags, Table
+Created Mini-Project, Semantic Tags, Table, Forms
