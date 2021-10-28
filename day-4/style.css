@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+}
+
+.image-item {
+  width: 250px;
+  height: 180px;
+}
+
+.image-wrapper {
+  display: inline;
+}
+
+.menu-item {
+  display: block;
+  /* display: none; */
+  /* visibility: hidden; */
+}
+
+/* Inline Block */
+
+main {
+  padding: 16px 10%;
+}
+
+header {
+  background-color: lightblue;
+  height: 80px;
+
+  /* To make the topbar stick to the top */
+  position: sticky;
+  top: 0;
+}
+
+aside {
+  width: 29%;
+  margin-right: 1%;
+  background-color: lightcoral;
+  height: 450px;
+  display: inline-block;
+}
+
+section {
+  width: 69%;
+  background-color: burlywood;
+  height: 450px;
+  display: inline-block;
+}
+
+footer {
+  height: 300px;
+  background-color: lightgray;
+}
+
+/* Positioning */
+.navbar {
+  background-color: white;
+  width: 100%;
+  height: 62px;
+  padding: 20px 70px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.menu {
+  margin: 12px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.wrapper {
+  width: 600px;
+  height: 500px;
+  /* overflow: scroll; */
+  overflow: auto;
+}
+.image {
+  height: 400px;
+  height: 500px;
+  text-align: center;
+  /* box-sizing: border-box; */
+  padding: 90px;
+  text-align: left;
+  /* position: fixed;
+  right: 0;
+  bottom: 0; */
+}
