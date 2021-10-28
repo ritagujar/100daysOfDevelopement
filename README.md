@@ -7,7 +7,7 @@ Paragraph,
 Image,
 Lists,
 Block vs Inline Block,
-Hyperlinks,
+Hyperlinks
 
 Day2 -
 Created Mini-Project, Semantic Tags, Table, Forms
