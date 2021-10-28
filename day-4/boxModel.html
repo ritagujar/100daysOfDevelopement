@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAy-4 CSS Box Model</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body style="background-color: lightblue">
+    <!-- Adding Shadow -->
+    <h1 class="heading">Box Model</h1>
+
+    <!-- Box Model -->
+    <div class="div1">
+      <img
+        class="image-banner"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROnVzp9hT4WCcXm-DRosqWlNCXVHvGgt8uONSHmclxSLUeoP4kfUhyJFAR4hrB8F1WhIM&usqp=CAU"
+        alt=""
+      />
+    </div>
+    <div class="div2">
+      <img
+        class="image-banner"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROnVzp9hT4WCcXm-DRosqWlNCXVHvGgt8uONSHmclxSLUeoP4kfUhyJFAR4hrB8F1WhIM&usqp=CAU"
+        alt=""
+      />
+    </div>
+
+    <!-- Combinators -->
+    <!-- 1. Descendent Selector: ' '
+    2. Child Selectoer: '>'
+    3. Adjacent Sibling Selector: '+'
+    4. General Sibling Selectoe: '~' -->
+
+    <main>
+      <section id="article-wrapper">
+        <article class="combinators">
+          <h3 class="heading2">Art Thou Lorem 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            illum ducimus ipsa minima. Asperiores obcaecati modi
+          </p>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              illum ducimus ipsa minima. Asperiores obcaecati modi
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              illum ducimus ipsa minima. Asperiores obcaecati modi ?
+            </p>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae</p>
+        </article>
+        <article class="combinators">
+          <h3 class="heading2">Art Thou Lorem 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            illum ducimus ipsa minima. Asperiores obcaecati modi
+          </p>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              illum ducimus ipsa minima. Asperiores obcaecati modi
+            </p>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            illum ducimus ipsa minima. Asperiores obcaecati modi ?
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae</p>
+        </article>
+        <article class="combinators">
+          <h3 class="heading2">Art Thou Lorem 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            illum ducimus ipsa minima. Asperiores obcaecati modi
+          </p>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              illum ducimus ipsa minima. Asperiores obcaecati modi
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              illum ducimus ipsa minima. Asperiores obcaecati modi ?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

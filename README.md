@@ -30,5 +30,8 @@ Styling Buttons
 
 Day-4 -
 Display Values-Inline Block,
-Positioning - Static, Relative, Absolute, Sticky, Fixed
-Handling Overflow - Visible, Hidden, Scroll, Auto
+POSITIONING - Static, Relative, Absolute, Sticky, Fixed, Floating
+HANDLING OVERFLOW - Visible, Hidden, Scroll, Auto,
+BOX MODEL,
+ADDING SHADOW - Text Shadow, Box Shadow,
+COMBINATORS

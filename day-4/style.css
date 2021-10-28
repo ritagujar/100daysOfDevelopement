@@ -42,7 +42,7 @@ aside {
 
 section {
   width: 69%;
-  background-color: burlywood;
+  /* background-color: burlywood; */
   height: 450px;
   display: inline-block;
 }
@@ -65,9 +65,11 @@ footer {
 }
 
 .menu {
-  margin: 12px;
+  margin: 3px 12px;
   font-size: 20px;
   text-transform: uppercase;
+  float: right;
+  padding-bottom: 12px;
 }
 .wrapper {
   width: 600px;
@@ -85,4 +87,112 @@ footer {
   /* position: fixed;
   right: 0;
   bottom: 0; */
+}
+
+/* Floating */
+#article-wrapper {
+  padding: 4% 16%;
+}
+
+article {
+  padding-bottom: 48px;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+article-pic {
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-right: 16px;
+}
+
+/* Box Model */
+.div1 {
+  height: 300px;
+  width: 300px;
+  font-size: 24px;
+  background-color: lightcoral;
+  /* Here in non box-sizing:  if we add padding box size will increase and image will remain same; */
+  padding: 90px;
+}
+
+.div2 {
+  width: 300px;
+  height: 300px;
+  font-size: 24px;
+  background-color: burlywood;
+  margin-top: 24px;
+
+  /* By default box-sizing is content box */
+  /* Here in box-sizing:  if we increase the  padding  image size will increase/decrease and box will remain same; */
+  padding: 90px;
+  box-sizing: border-box;
+}
+
+.image-banner {
+  height: 100%;
+  width: 100%;
+}
+
+/* Adding Shadow */
+
+.heading {
+  text-align: center;
+  color: blue;
+  text-transform: uppercase;
+  /* Text Shadow */
+  /* text-shadow: 4px 4px 3px gray; */
+  /* text-shadow: 2px 2px 2px red, 2px 6px 2px green; */
+
+  /* Box Shadow */
+  margin: 24px;
+  width: 300px;
+  height: 400px;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 02px 4px 4px gray;
+}
+
+/* Combinators */
+.combinators {
+  padding: 18px;
+  margin-bottom: 36px;
+  font-size: 24px;
+  line-height: 1.4;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px #aaa;
+}
+
+.heading2 {
+  font-size: 36px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Descendent Selector: ' ' */
+article p {
+  font-size: 18px;
+  color: lightsalmon;
+}
+
+/* Child Selectoer: '>' */
+
+/* article > p {
+  background-color: lightcoral;
+} */
+
+/* Adjacent Sibling Selector: '+' */
+/* div + p {
+  background-color: lightblue;
+} */
+
+/* h3 + p {
+  background-color: lightgreen;
+} */
+
+/* General Sibling Selectoe: '~' */
+div ~ p {
+  background-color: lightblue;
 }
