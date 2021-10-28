@@ -24,3 +24,6 @@ Inline, Internal and external CSS,
 Styling Text,
 Adding Borders,
 Margin and Padding
+Styling List,
+Styling Links,
+Styling Buttons

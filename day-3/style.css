@@ -65,3 +65,95 @@ p {
   /* Top-Bottom Left-Right */
   margin: 48px 60px;
 }
+
+/* Styling List */
+
+#ordered-list {
+  list-style-type: lower-roman;
+}
+
+#unordered-list {
+  list-style-type: square;
+}
+
+/* Links */
+#topbar {
+  background-color: lightblue;
+  padding: 24px 48px;
+}
+
+.menu-items {
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  margin-right: 24px;
+  text-transform: uppercase;
+}
+
+.menu-items:link {
+  color: blue;
+}
+
+.menu-items:visited {
+  color: green;
+}
+
+/* Rule - Hover must come after links and visited */
+.menu-items:hover {
+  color: red;
+}
+
+/* Rule - active must come after hover */
+.menu-items:active {
+  color: purple;
+}
+
+/* Styling buttons */
+
+#btn-login {
+  background-color: lightblue;
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  margin: 24px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+}
+#btn-login:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+#btn-signup {
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  margin: 24px;
+  padding: 8px 16px;
+  background-color: white;
+  border: 2px solid lightblue;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}
+
+#btn-signup:hover {
+  background-color: lightblue;
+}
+
+#btn-disabled {
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  margin: 24px;
+  padding: 8px 16px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
