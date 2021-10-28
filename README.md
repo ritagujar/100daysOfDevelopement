@@ -19,5 +19,8 @@ Day3 -
 Audio and Video Tags,
 svg tag
 
-#CSS
-Inline, Internal and external CSS
+CSS -
+Inline, Internal and external CSS,
+Styling Text,
+Adding Borders,
+Margin and Padding

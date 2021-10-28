@@ -1,5 +1,20 @@
 /* External CSS */
 
+h1 {
+  color: blue;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+p {
+  color: brown;
+  font-weight: 600;
+  letter-spacing: 2px;
+  word-spacing: 0px;
+  line-height: 2;
+}
+
 /* For id */
 #country-desc {
   font-size: 24px;
@@ -7,6 +22,9 @@
   text-align: center;
   padding-left: 32px;
   padding-right: 32px;
+  border-style: dotted;
+  border-width: 3px;
+  border-color: red;
 }
 
 /* For Class */
@@ -14,6 +32,36 @@
   font-size: 24px;
   line-height: 1.4;
   text-align: center;
-  padding-left: 32px;
-  padding-right: 32px;
+  border: 4px solid blue;
+  border-radius: 10px;
+
+  /* padding: 100px is overriden by padding-top, padding-right, padding-left and padding-bottom */
+  /* padding: 100px; 
+  padding-top: 16px;
+  padding-right: 20px;
+  padding-left: 24px;
+  padding-bottom: 28px; */
+
+  /* Another way to use padding */
+  /* Top Right Botton Left */
+  padding: 16px 20px 28px 24px;
+
+  /* or */
+  /* Top-Botton Left-Right */
+  padding: 24px 48px;
+
+  /* when we want to add space outside the border use margin */
+  /* margin: 48px;
+  margin-top: 48px;
+  margin-right: 24px;
+  margin-bottom: 32px;
+  margin-left: 60px; */
+
+  /* Another way to use margin  */
+  /* Top Right Bottom Left */
+  margin: 48px 24px 32px 60px;
+
+  /* or */
+  /* Top-Bottom Left-Right */
+  margin: 48px 60px;
 }
