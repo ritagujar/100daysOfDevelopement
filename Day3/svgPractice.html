@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 - Intro to SVG</title>
+  </head>
+  <body>
+    <!-- <img src="/Day3/line.svg" alt="" /> -->
+
+    <h1>Line using SVG</h1>
+    <svg width="500px" height="200px">
+      <line x1="0" y1="0" x2="100" y2="100" stroke="red" stroke-width="3px" />
+    </svg>
+
+    <!-- Circle using SVG -->
+    <h1>Circle using SVG</h1>
+
+    <svg width="200" height="200">
+      <circle
+        cx="100"
+        cy="100"
+        r="50"
+        fill="lightblue"
+        stroke="darkblue"
+        stroke-width="8px"
+      />
+      <!-- If browser does not support svg the bellow text will be shown -->
+      Sorry buddy, your browser does not support inline svg
+    </svg>
+
+    <!-- Rectangle using SVG -->
+    <h1>Rectangle using SVG</h1>
+    <svg width="500" height="200">
+      <rect
+        width="200"
+        height="150"
+        fill="lightcoral"
+        x="20"
+        y="20"
+        stroke="lightblue"
+        stroke-width="10px"
+        rx="25"
+        ry="25"
+      />
+      <!-- If browser does not support svg the bellow text will be shown -->
+      Sorry buddy, your browser does not support inline svg
+    </svg>
+  </body>
+</html>

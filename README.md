@@ -11,3 +11,5 @@ Hyperlinks
 
 Day2 -
 Created Mini-Project, Semantic Tags, Table, Forms
+
+Day3 - Audio and Video Tags, SVG
