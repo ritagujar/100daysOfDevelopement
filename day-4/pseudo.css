@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  background-color: lightblue;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+#register-form {
+  width: 300px;
+  background-color: white;
+  margin: auto;
+  padding: 35px;
+  border-radius: 5px;
+  box-shadow: 2px 4px 2px #ccc;
+}
+
+.input-item {
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 8px;
+  margin-top: 16px;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.input-item:focus {
+  background-color: lightblue;
+}
+
+.input-item:disabled {
+  cursor: not-allowed;
+}
+
+.input-item:focus:required {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+#terms-check {
+  margin-top: 12px;
+  margin-bottom: 18px;
+}
+
+.btn-submit {
+  width: 100%;
+  margin-top: 15px;
+  color: white;
+  background-color: rgba(0, 72, 255, 0.8);
+  height: 33px;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-submit:hover {
+  background-color: blue;
+}
+
+#article-wrapper {
+  padding: 4% 16%;
+}
+
+article {
+  margin-bottom: 36px;
+  font-size: 24px;
+  padding: 48px;
+  line-height: 1;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px #aaa;
+}
+
+/* Selecting the first paragraph of eact article */
+/* article > p:first-of-type {
+  background-color: lightcoral;
+} */
+
+/* Selecting the last paragraph of each article */
+/* article > p:last-of-type {
+  background-color: lightgreen;
+} */
+
+/* Selecting a second from first paragraph of each article */
+/* article > p:nth-of-type(2) {
+  background-color: lightslategray;
+} */
+
+/* Selecting a second from last paragraph of each article */
+/* article > p:nth-last-of-type(2) {
+  background-color: burlywood;
+} */
+
+/* Select all the paragraph which are first child inside the article */
+
+/* article > p:first-child {
+  color: lightsalmon;
+} */
+
+/* Pseudo Elemnts - ::after, ::before, ::first-line */
+
+/* article > p {
+  background-color: lightgreen;
+} */
+
+article > p::first-line {
+  background-color: lightgreen;
+  color: lightcoral;
+}
+
+article > p::first-letter {
+  font-size: 36px;
+  color: lightslategray;
+}
+
+article > p::selection {
+  background-color: lightcoral;
+  color: black;
+}
+
+article > p::before {
+  content: "'";
+}
+
+article > p::after {
+  content: "'";
+}

@@ -34,4 +34,6 @@ POSITIONING - Static, Relative, Absolute, Sticky, Fixed, Floating
 HANDLING OVERFLOW - Visible, Hidden, Scroll, Auto,
 BOX MODEL,
 ADDING SHADOW - Text Shadow, Box Shadow,
-COMBINATORS
+COMBINATORS,
+PSEUDO CLASSES - focus, disabled, active, required,
+PSEUDO ELEMENTS - ::Before, ::after, ::selection, ::first-line, ::first-letter
