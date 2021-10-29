@@ -73,6 +73,9 @@ div {
   /* or */
   /* To handle a multiple transitions we can seperate them using comma */
   transition: background-color 3s ease-in, border-radius 3s ease-in;
+
+  /* Animation */
+  animation-name: pulse;
 }
 .div2 {
   background-color: bisque;
@@ -83,4 +86,16 @@ div {
 div:hover {
   background-color: lightcoral;
   border-radius: 150px;
+}
+
+/* Animation */
+
+@keyframes pulse {
+  0% {
+    background-color: lightblue;
+  }
+
+  100% {
+    background-color: lightcoral;
+  }
 }
