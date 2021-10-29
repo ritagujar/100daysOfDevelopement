@@ -36,4 +36,6 @@ BOX MODEL,
 ADDING SHADOW - Text Shadow, Box Shadow,
 COMBINATORS,
 PSEUDO CLASSES - focus, disabled, active, required,
-PSEUDO ELEMENTS - ::Before, ::after, ::selection, ::first-line, ::first-letter
+PSEUDO ELEMENTS - ::Before, ::after, ::selection, ::first-line, ::first-letter,
+GRADIENTS - Linear Gradient and Radial Gradient
+PRACTICE PROBLEM OF CSS

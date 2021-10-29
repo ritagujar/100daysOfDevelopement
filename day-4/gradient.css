@@ -1,0 +1,40 @@
+/* Linear-Gradient */
+#div1 {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to right, #fa69d5, #5650de);
+}
+
+#div2 {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(45deg, #fa69d5, #5650de);
+  margin-top: 45px;
+}
+
+#div3 {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(90deg, #fa69d5, #5650de);
+  margin-top: 45px;
+}
+
+/* Radial-Gradient */
+#div4 {
+  width: 100%;
+  height: 100px;
+  /* background: radial-gradient(#fa69d5, #5650de); */
+  /* background: radial-gradient(circle, #fa69d5, #5650de); */
+  /* background: radial-gradient(circle closest-side, #fa69d5, #5650de); */
+  background: radial-gradient(circle farthest-side, #fa69d5, #5650de);
+}
+
+#div5 {
+  width: 200px;
+  height: 200px;
+  /* background: radial-gradient(circle closest-corner, #fa69d5, #5650de); */
+  /* background: radial-gradient(circle farthest-corner, #fa69d5, #5650de); */
+  /* background: radial-gradient(circle at top left, #ee35c0, #5650de); */
+  background: radial-gradient(circle at top right, #ee35c0, #5650de);
+  margin-top: 45px;
+}
