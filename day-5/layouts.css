@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 400px;
+  background-color: lightblue;
+  box-sizing: border-box;
+  padding: 32px;
+  display: flex;
+  /* flex-direction: row-reverse; */
+  /* flex-direction: row; */
+  /* justify-content: space-around; */
+
+  /* ALl the overflow content will come on the next line*/
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse; */
+
+  /* align item in flex */
+  /* flex-direction: column; */
+  /* align-items: flex-end; */
+  /* align-items: flex-start; */
+  /* align-items: stretch; */
+
+  /* align content */
+  /* align-items: flex-start; */
+  /* align-content: flex-end; */
+
+  /* Difference between aline-item and align-content */
+  align-items: center;
+  /* align-content: center; */
+}
+
+.item {
+  background-color: lightcoral;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  padding: 32px;
+  font-size: 24px;
+  text-align: center;
+  flex-basis: 120px;
+}
+
+/* .item:nth-child(2) {
+  background-color: bisque;
+  order: 1;
+} */
+
+.item:nth-child(odd) {
+  background-color: beige;
+  align-self: center;
+}
+
+/* .item:nth-child(even) {
+  background-color: beige;
+  align-self: center;
+} */
+
+/* TRANSITION PROPERTIES */
+div {
+  width: 300px;
+  height: 300px;
+  margin: 48px;
+  text-align: center;
+  background-color: lightblue;
+  /* transition-property: background-color;
+  transition-duration: 3000ms; */
+
+  /* ease-in - Start Slowely and end fast */
+  transition-timing-function: ease-in;
+
+  /* or */
+  /* To handle a multiple transitions we can seperate them using comma */
+  transition: background-color 3s ease-in, border-radius 3s ease-in;
+}
+.div2 {
+  background-color: bisque;
+  /* ease-out - Start Fast and End Slowely */
+  transition: background-color 3s ease-out, border-radius 3s ease-out;
+}
+
+div:hover {
+  background-color: lightcoral;
+  border-radius: 150px;
+}

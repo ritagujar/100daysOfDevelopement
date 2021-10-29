@@ -39,3 +39,8 @@ PSEUDO CLASSES - focus, disabled, active, required,
 PSEUDO ELEMENTS - ::Before, ::after, ::selection, ::first-line, ::first-letter,
 GRADIENTS - Linear Gradient and Radial Gradient
 PRACTICE PROBLEM OF CSS
+
+Day-5 -
+LAYOUTS - Flex, Flex Item, Grid
+TRANSFORM PROPERTIES,
+TRANSITION PROPERTIES
