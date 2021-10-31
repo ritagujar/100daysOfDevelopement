@@ -72,4 +72,4 @@ Day-7 -
 
 ARRAY - splice(), concat(), sort(), reverse()\
 LOOPS - while loop, for loop, break, continue\
-FUNCTIONS - Function Arguments, Scope and Environment\
+FUNCTIONS - Function Arguments, Scope and Environment, Variable Hosting, Function Hosting
