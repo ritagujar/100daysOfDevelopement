@@ -46,7 +46,7 @@ TRANSFORM PROPERTIES,
 TRANSITION PROPERTIES,
 ANIMATION PROPERTY
 
-Day-5 - JavaScript
+Day-6 - JavaScript
 
 Variables,
 DataTypes,
@@ -55,4 +55,8 @@ Expressions,
 Numbers,
 In-Built Number Functions,
 Strings, JS String functions,
-Null and Undefined Values
+Null and Undefined Values,
+Conditional statements,
+Arithmatic Operators,
+Assignment Operators,
+Comparison and Logical Operators
