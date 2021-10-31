@@ -53,3 +53,6 @@ DataTypes,
 Operators,
 Expressions,
 Numbers,
+In-Built Number Functions,
+Strings, JS String functions,
+Null and Undefined Values
