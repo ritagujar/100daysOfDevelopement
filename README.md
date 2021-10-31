@@ -59,4 +59,6 @@ Null and Undefined Values,
 Conditional statements,
 Arithmatic Operators,
 Assignment Operators,
-Comparison and Logical Operators
+Comparison and Logical Operators,
+Implicit and Explicit Coercion,
+Objects

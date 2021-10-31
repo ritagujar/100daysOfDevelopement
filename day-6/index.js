@@ -150,64 +150,64 @@ var x = 10;
 var y = 20;
 
 // 1. if-else
-if (x > y) {
-  console.log(true);
-} else {
-  console.log(false);
-}
+// if (x > y) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
 
 // 2. if-else if
-if (x > y) {
-  console.log("x > y");
-} else if (x < y) {
-  console.log("x < y");
-} else {
-  console.log("Nothing");
-}
+// if (x > y) {
+//   console.log("x > y");
+// } else if (x < y) {
+//   console.log("x < y");
+// } else {
+//   console.log("Nothing");
+// }
 
 // 3. switch
 var currentDay = "Fri";
-if (currentDay === "Mon") {
-  console.log("Timing 10:00-06:00");
-} else if (currentDay === "Tue") {
-  console.log("Timing 09:00-05:00");
-} else if (currentDay === "wed") {
-  console.log("Timing 09:30-05:30");
-} else if (currentDay === "Thu") {
-  console.log("Timing 10:15-09:15");
-} else if (currentDay === "Fri") {
-  console.log("Timing 01:00-04:00");
-} else if (currentDay === "Sat") {
-  console.log("Timing 01:30-04:30");
-} else if (currentDay === "Sun") {
-  console.log("Timing 05:00-08:00");
-}
+// if (currentDay === "Mon") {
+//   console.log("Timing 10:00-06:00");
+// } else if (currentDay === "Tue") {
+//   console.log("Timing 09:00-05:00");
+// } else if (currentDay === "wed") {
+//   console.log("Timing 09:30-05:30");
+// } else if (currentDay === "Thu") {
+//   console.log("Timing 10:15-09:15");
+// } else if (currentDay === "Fri") {
+//   console.log("Timing 01:00-04:00");
+// } else if (currentDay === "Sat") {
+//   console.log("Timing 01:30-04:30");
+// } else if (currentDay === "Sun") {
+//   console.log("Timing 05:00-08:00");
+// }
 
-switch (currentDay) {
-  case "Mon":
-    console.log("Timing 10:00-06:00");
-    break;
-  case "Tue":
-    console.log("Timing 09:00-05:00");
-    break;
-  case "Wed":
-    console.log("Timing 09:30-05:30");
-    break;
-  case "Thu":
-    console.log("Timing 10:15-09:15");
-    break;
-  case "Fri":
-    console.log("Timing 01:00-04:00");
-    break;
-  case "Sat":
-    console.log("Timing 01:30-04:30");
-    break;
-  case "Sun":
-    console.log("Timing 05:00-08:00");
-    break;
-  default:
-    console.log("Timing 05:00-08:00");
-}
+// switch (currentDay) {
+//   case "Mon":
+//     console.log("Timing 10:00-06:00");
+//     break;
+//   case "Tue":
+//     console.log("Timing 09:00-05:00");
+//     break;
+//   case "Wed":
+//     console.log("Timing 09:30-05:30");
+//     break;
+//   case "Thu":
+//     console.log("Timing 10:15-09:15");
+//     break;
+//   case "Fri":
+//     console.log("Timing 01:00-04:00");
+//     break;
+//   case "Sat":
+//     console.log("Timing 01:30-04:30");
+//     break;
+//   case "Sun":
+//     console.log("Timing 05:00-08:00");
+//     break;
+//   default:
+//     console.log("Timing 05:00-08:00");
+// }
 
 // ARITHMATIC OPERATORS
 var number1 = 10;
@@ -265,81 +265,154 @@ console.log(number1);
 // Comparison Operator
 
 // loose comparison operator
-if (5 == 5) {
+// if (5 == 5) {
+//   console.log(true);
+// }
+// if (5 == "5") {
+//   console.log(true); // It will return true
+// } else {
+//   console.log(false);
+// }
+
+// if (5 === 5) {
+//   console.log(true);
+// }
+// if (5 === "5") {
+//   //It will return false
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+
+// if (5 != "5") {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+
+// if (5 !== "5") {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+
+// if (5 < 10) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+// if (5 <= 10) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+
+// if (5 > 10) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+// if (5 >= 10) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+
+// // LOGICAL OPERATORS
+// // 1. AND - &&
+
+// if (5 < 10 && 10 < 15) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+
+// // 2. OR - ||
+// if (5 < 10 || 10 < 15) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+
+// // 3. NOT - !
+// if (!(5 < 10)) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+
+// // TERNARY OPERATOR - (expression) ? a : b
+// 2 < 3 ? console.log(true) : console.log(false);
+
+// COERCION - Implicit
+
+var mStr = "Hello";
+var mNum = 5;
+var mSum = mStr + mNum;
+
+console.log(mSum); //Hello5
+console.log(typeof mSum); //String
+
+console.log("Hello" + true); //Hellotrue
+console.log(typeof (null + "hello")); //string
+
+console.log(50 + "Hello"); // 50Hello
+console.log(typeof (50 + "Hello")); // String
+
+console.log(+"2"); // 2
+console.log(typeof +"2"); // number
+
+// Conversion to boolean type
+if (0) {
   console.log(true);
-}
-if (5 == "5") {
-  console.log(true); // It will return true
 } else {
   console.log(false);
 }
 
-if (5 === 5) {
-  console.log(true);
-}
-if (5 === "5") {
-  //It will return false
-  console.log(true);
-} else {
-  console.log(false);
-}
+// COERCION - Explicit
+// To String
+console.log(String(mNum)); // 5
+console.log(typeof String(mNum)); //string
+console.log(typeof String(-98.88)); //String
+console.log(typeof String(null)); //String
+console.log(typeof String(undefined)); //String
 
-if (5 != "5") {
-  console.log(true);
-} else {
-  console.log(false);
-}
+// To Number
+console.log(typeof Number("5"));
+console.log(typeof Number(-98.77));
 
-if (5 !== "5") {
-  console.log(true);
-} else {
-  console.log(false);
-}
+// To Boolean
+console.log(typeof Boolean(1));
 
-if (5 < 10) {
-  console.log(true);
-} else {
-  console.log(false);
-}
-if (5 <= 10) {
-  console.log(true);
-} else {
-  console.log(false);
-}
+// OBJECTS
+var myCars = {
+  p1: "350 kmph",
+  gallardo: "320 kmph",
+  veyron: "499 kmph",
+  agera: "429 kmph",
+};
 
-if (5 > 10) {
-  console.log(true);
-} else {
-  console.log(false);
-}
-if (5 >= 10) {
-  console.log(true);
-} else {
-  console.log(false);
-}
+console.log(myCars);
+console.log(typeof myCars); // object
 
-// LOGICAL OPERATORS
-// 1. AND - &&
+var myAgera = {
+  name: "Agera",
+  manuFacture: {
+    name: "Koenigsegg",
+    location: "Sweden",
+  },
+  topSpeed: 429,
+  color: "Black",
+  spoillers: false,
+  applyBrakes: function () {
+    setTimeout(function () {
+      console.log("Car Stopped");
+    }, 5000);
+  },
+};
 
-if (5 < 10 && 10 < 15) {
-  console.log(true);
-} else {
-  console.log(false);
-}
-
-// 2. OR - ||
-if (5 < 10 || 10 < 15) {
-  console.log(true);
-} else {
-  console.log(false);
-}
-
-// 3. NOT - !
-if (!(5 < 10)) {
-  console.log(true);
-} else {
-  console.log(false);
-}
-
-// TERNARY OPERATOR - (expression) ? a : b
-2 < 3 ? console.log(true) : console.log(false);
+console.log(myAgera.name);
+console.log(myAgera.topSpeed);
+console.log(myAgera.manuFacture);
+console.log(myAgera.manuFacture.name);
+console.log(myAgera.applyBrakes());
