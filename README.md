@@ -1,5 +1,7 @@
 ## 100DaysOfDEvelopement
 
+### HTML
+
 Day-1 -
 HTML Tags,
 Heading,
@@ -19,7 +21,8 @@ Day-3 -
 Audio and Video Tags,
 svg tag
 
-CSS -
+### CSS
+
 Inline, Internal and external CSS,
 Styling Text,
 Adding Borders,
@@ -46,7 +49,9 @@ TRANSFORM PROPERTIES,
 TRANSITION PROPERTIES,
 ANIMATION PROPERTY
 
-Day-6 - JavaScript
+### JavaScript
+
+Day-6 -
 
 Variables,
 DataTypes,
@@ -62,3 +67,9 @@ Assignment Operators,
 Comparison and Logical Operators,
 Implicit and Explicit Coercion,
 Objects
+
+Day-7 -
+
+ARRAY - splice(), concat(), sort(), reverse()\
+LOOPS - while loop, for loop, break, continue\
+FUNCTIONS - Function Arguments, Scope and Environment\
