@@ -45,3 +45,11 @@ LAYOUTS - Flex, Flex Item, Grid
 TRANSFORM PROPERTIES,
 TRANSITION PROPERTIES,
 ANIMATION PROPERTY
+
+Day-5 - JavaScript
+
+Variables,
+DataTypes,
+Operators,
+Expressions,
+Numbers,
