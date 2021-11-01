@@ -73,4 +73,7 @@ Day-7 -
 ARRAY - splice(), concat(), sort(), reverse()\
 LOOPS - while loop, for loop, break, continue\
 FUNCTIONS - Function Arguments, Scope and Environment, Variable Hosting, Function Hosting\
-Inline, Internal and External JavaScript
+Inline, Internal and External JavaScript\
+Document Object Model (DOM) -\
+Select HTML elements in JS (Selectors), Query Selectors, Manipulating and Changing Styles of HTML Elements with Javascript/
+The Separation of Concerns Structure vs Style vs Behaviour, mini project- Count-Down of number, Updating Styles

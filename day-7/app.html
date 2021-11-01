@@ -4,18 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DOM - Select HTML Elements</title>
+    <title>Day-7 JavaScript DOM Elements</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <!-- Inline JS -->
-  <body onload="alert('Hello');">
-    <h1 id="head">Hello, Here I am learning JavaScript</h1>
+  <body>
+    <h1 id="title">Hello</h1>
+    <input type="checkbox" />
+    <button class="btn" style="color: red">Click Me</button>
 
-    <!-- External JS -->
+    <ul id="list">
+      <li class="item">
+        <a href="https://www.google.com">Google</a>
+      </li>
+      <li class="item">Second</li>
+      <li id="change" class="item">Third</li>
+    </ul>
+
+    <div class="container">
+      <h2 id="countdown">10</h2>
+    </div>
+
     <script src="./app.js"></script>
-
-    <!-- Internal JS -->
-    <script>
-      alert("Hey...");
-    </script>
   </body>
 </html>

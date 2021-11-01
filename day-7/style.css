@@ -1,0 +1,11 @@
+.huge {
+  font-size: 5rem;
+  color: red;
+  font-weight: bold;
+}
+
+.container {
+  font-size: 40px;
+  align-items: center;
+  margin: 0 50%;
+}
