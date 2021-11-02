@@ -1,8 +1,8 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   background-color: lightblue;
-}
+} */
 
 .small {
   font-size: 24px;
@@ -57,4 +57,29 @@ button {
   bottom: 50%;
   font-size: 24px;
   font-weight: 600;
+}
+
+h1 {
+  text-align: center;
+}
+#register-form {
+  width: 300px;
+  background-color: white;
+  padding: 24px;
+  margin: auto;
+}
+
+.input-label {
+  margin: 0;
+  margin-bottom: 4px;
+  margin-top: 12px;
+}
+
+.input-items {
+  width: 100%;
+}
+
+#terms-check {
+  margin-top: 12px;
+  margin-bottom: 18px;
 }

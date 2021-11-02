@@ -81,4 +81,5 @@ The Separation of Concerns Structure vs Style vs Behaviour, mini project- Count-
 Day-8 -
 
 EVENTS -
-Add/Remove Classes using JavaScript, onClick(), Get Styles of an HTML Element, Font Increase counter
+Add/Remove Classes using JavaScript, onClick(), Get Styles of an HTML Element, Font Increase counter\
+FORM EVENTS - change, focus, blur, submit\
