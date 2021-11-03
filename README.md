@@ -87,4 +87,4 @@ FORM EVENTS - change, focus, blur, submit\
 Day-9 -
 
 KEYBOARD EVENTS - keydown, keyup and keypress/
-Mini projects - DRUM KIT - click Event
+Mini projects - DRUM KIT - click Event, keyboard Event, Animation on press.

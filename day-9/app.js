@@ -19,43 +19,68 @@
 
 // DRUM KIT
 
+// Dettecting Button Press
 var numberOfDrumBtn = document.querySelectorAll(".drum").length;
 
 for (var i = 0; i < numberOfDrumBtn; i++) {
   document.querySelectorAll(".drum")[i].addEventListener("click", function () {
     var btnInnerHTML = this.innerHTML;
-    switch (btnInnerHTML) {
-      case "w":
-        var tom = new Audio("sounds/tom.wav");
-        tom.play();
-        break;
-      case "a":
-        var boom = new Audio("sounds/boom.wav");
-        boom.play();
-        break;
-      case "s":
-        var clap = new Audio("sounds/clap.wav");
-        clap.play();
-        break;
-      case "d":
-        var kick = new Audio("sounds/kick.wav");
-        kick.play();
-        break;
-      case "j":
-        var ride = new Audio("sounds/ride.wav");
-        ride.play();
-        break;
-      case "k":
-        var tink = new Audio("sounds/tink.wav");
-        tink.play();
-        break;
-      case "l":
-        var hihat = new Audio("sounds/hihat.wav");
-        hihat.play();
-        break;
+    makeSound(btnInnerHTML);
 
-      default:
-        console.log(btnInnerHTML);
-    }
+    btnAnimation(btnInnerHTML);
   });
+}
+
+// Detecting Key Press
+
+document.addEventListener("keypress", function (event) {
+  makeSound(event.key);
+  btnAnimation(event.key);
+});
+
+function makeSound(key) {
+  switch (key) {
+    case "w":
+      var tom = new Audio("sounds/tom.wav");
+      tom.play();
+      break;
+    case "a":
+      var boom = new Audio("sounds/boom.wav");
+      boom.play();
+      break;
+    case "s":
+      var clap = new Audio("sounds/clap.wav");
+      clap.play();
+      break;
+    case "d":
+      var kick = new Audio("sounds/kick.wav");
+      kick.play();
+      break;
+    case "j":
+      var ride = new Audio("sounds/ride.wav");
+      ride.play();
+      break;
+    case "k":
+      var tink = new Audio("sounds/tink.wav");
+      tink.play();
+      break;
+    case "l":
+      var hihat = new Audio("sounds/hihat.wav");
+      hihat.play();
+      break;
+
+    default:
+      console.log(btnInnerHTML);
+  }
+}
+
+// Animation
+
+function btnAnimation(currentKey) {
+  var activeButton = document.querySelector("." + currentKey);
+  activeButton.classList.add("pressed");
+
+  setTimeout(function () {
+    activeButton.classList.remove("presses");
+  }, 100);
 }
