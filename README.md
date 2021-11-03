@@ -82,9 +82,9 @@ Day-8 -
 
 EVENTS -
 Add/Remove Classes using JavaScript, onClick(), Get Styles of an HTML Element, Font Increase counter\
-FORM EVENTS - change, focus, blur, submit\
+FORM EVENTS - change, focus, blur, submit.
 
 Day-9 -
 
-KEYBOARD EVENTS - keydown, keyup and keypress/
-Mini projects - DRUM KIT - click Event, keyboard Event, Animation on press.
+KEYBOARD EVENTS - keydown, keyup and keypress\
+Mini projects - DRUM KIT - click Event, keyboard Event, Animation on key press.
