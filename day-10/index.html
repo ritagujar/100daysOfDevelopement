@@ -20,12 +20,13 @@
 
       section {
         text-align: center;
+        margin-top: 20pxx;
       }
       #add-item {
         height: 50px;
         width: 200px;
         font-size: 22px;
-        margin-top: 20px;
+        background-color: white;
         cursor: pointer;
         border-radius: 6px;
         border: none;
@@ -36,19 +37,44 @@
 
       ul > li {
         height: 35px;
-        width: 400px;
+        width: 470px;
         margin-top: 9px;
         background-color: white;
         padding-top: 10px;
         border-radius: 6px;
         list-style-type: none;
         font-size: 18px;
+        text-align: left;
+        padding-left: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #todo-input {
+        height: 50px;
+        width: 250px;
+        font-size: 18px;
+        margin-top: 20px;
+        margin-right: 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        outline: none;
+        padding-left: 10px;
+      }
+
+      #todo-input:focus {
+        border: 1px solid lemonchiffon;
+        transition: border 0.1s;
       }
     </style>
   </head>
   <body>
     <header>
       <section>
+        <input
+          id="todo-input"
+          type="text"
+          placeholder="Enter TODO item here..."
+        />
         <button id="add-item">Add List Items</button>
         <ul id="todo-list">
           <li>List Item 1</li>
