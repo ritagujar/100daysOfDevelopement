@@ -92,4 +92,7 @@ Mini projects - DRUM KIT - click Event, keyboard Event, Animation on key press.
 Day-10 -
 
 Add HTML Elements using JavaScript\
-Mini Project - TODO List - Add, Update and Remove Items from the list
+Mini Project - TODO List - Add, Update and Remove Items from the list\
+Browser Object Model (BOM)\
+Screen and Navigator Objects\
+Mini Project - Calculator
