@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-10 - JavaScript</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        display: flex;
+        justify-content: center;
+      }
+      body {
+        background-color: lightblue;
+      }
+
+      section {
+        text-align: center;
+      }
+      #add-item {
+        height: 50px;
+        width: 200px;
+        font-size: 22px;
+        margin-top: 20px;
+        cursor: pointer;
+        border-radius: 6px;
+        border: none;
+      }
+      ul {
+        margin-top: 40px;
+      }
+
+      ul > li {
+        height: 35px;
+        width: 400px;
+        margin-top: 9px;
+        background-color: white;
+        padding-top: 10px;
+        border-radius: 6px;
+        list-style-type: none;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <section>
+        <button id="add-item">Add List Items</button>
+        <ul id="todo-list">
+          <li>List Item 1</li>
+          <li>List Item 2</li>
+        </ul>
+      </section>
+    </header>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

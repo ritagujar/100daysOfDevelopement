@@ -88,3 +88,7 @@ Day-9 -
 
 KEYBOARD EVENTS - keydown, keyup and keypress\
 Mini projects - DRUM KIT - click Event, keyboard Event, Animation on key press.
+
+Day-10 -
+
+Add HTML Elements using JavaScript
