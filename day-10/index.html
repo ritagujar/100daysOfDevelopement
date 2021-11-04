@@ -19,16 +19,19 @@
       }
 
       section {
-        text-align: center;
-        margin-top: 20pxx;
+        margin-top: 20px;
       }
-      #add-item {
+      .btn {
+        display: inline-block;
         height: 50px;
         width: 200px;
-        font-size: 22px;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-right: 10px;
         background-color: white;
         cursor: pointer;
         border-radius: 6px;
+
         border: none;
       }
       ul {
@@ -46,6 +49,7 @@
         font-size: 18px;
         text-align: left;
         padding-left: 10px;
+        margin-left: 65px;
         font-family: Arial, Helvetica, sans-serif;
       }
 
@@ -57,6 +61,7 @@
         margin-right: 12px;
         border: 1px solid #ccc;
         border-radius: 6px;
+        margin-left: 180px;
         outline: none;
         padding-left: 10px;
       }
@@ -75,7 +80,15 @@
           type="text"
           placeholder="Enter TODO item here..."
         />
-        <button id="add-item">Add List Items</button>
+        <div>
+          <button id="add-item" class="btn" style="display: inline-block">
+            Add List Items
+          </button>
+
+          <button id="update-item" class="btn">Update First Items</button>
+
+          <button id="remove-item" class="btn">Remove First Items</button>
+        </div>
         <ul id="todo-list">
           <li>List Item 1</li>
           <li>List Item 2</li>
