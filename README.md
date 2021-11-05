@@ -96,3 +96,7 @@ Mini Project - TODO List - Add, Update and Remove Items from the list\
 Browser Object Model (BOM)\
 Screen and Navigator Objects\
 Mini Project - Calculator
+
+Day-11 -
+
+ES6 - Variables 'let' and 'const'
