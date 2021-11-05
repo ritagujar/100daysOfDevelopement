@@ -99,4 +99,6 @@ Mini Project - Calculator
 
 Day-11 -
 
-ES6 - Variables 'let' and 'const'
+ES6 - Variables 'let' and 'const'\
+Templet Strings\
+Arrow Function
