@@ -107,4 +107,6 @@ Day-12 -
 
 Rest Operator and Spread Operator\
 Destructuring\
-Array Function: map(), reduce(), filter(), find(), findIndex()
+Array Function: map(), reduce(), filter(), find(), findIndex()\
+Classes, Inheritance in ES6\
+Callbacks and Async Operatons Promises, Chaining Promises
