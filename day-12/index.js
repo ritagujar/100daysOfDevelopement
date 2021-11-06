@@ -254,3 +254,49 @@ const res = people.reduce((acc, item) => {
   console.log(acc);
   return acc + item.experience;
 }, 0);
+
+// Array Function: filter() - It iterates through the array to create a new array. You can decide which elements shuold be added in the new array based on some conditions
+// This filter method helps us to filter through our array and creates new array
+
+console.log(".....Array Function: filter().....");
+
+const numArr1 = [1, 2, 3, 4, 5, 6, 7];
+
+const resultArr = numArr1.filter((item) => {
+  console.log(item);
+  return item % 2 == 0;
+});
+
+console.log("Result Arr => ", resultArr);
+
+// filter() on Object
+
+const resultArr1 = people.filter((item) => {
+  console.log(item.experience);
+  return item.experience >= 10;
+});
+
+console.log(resultArr1);
+
+// Array Function find() and findIndex()
+
+console.log("....Array Function: find() and findIndex()....");
+
+// find()
+
+const n = [-1, -2, -3, -4, 1, 2, 3, 4];
+const res1 = n.find((item) => {
+  // console.log(item);
+  return item % 2 === 0 && item >= 0;
+});
+
+console.log(res1); // will print 2 as it is the first positive even number
+
+// findIndex()
+
+const res2 = n.findIndex((item) => {
+  // console.log(item);
+  return item % 2 === 0 && item >= 0;
+});
+
+console.log(res2); // will print the index number of first positive even number - 5   (2 is at the 5th position in array)

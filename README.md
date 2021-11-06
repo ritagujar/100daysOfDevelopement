@@ -107,4 +107,4 @@ Day-12 -
 
 Rest Operator and Spread Operator\
 Destructuring\
-Array Function: map(), reduce()
+Array Function: map(), reduce(), filter(), find(), findIndex()
