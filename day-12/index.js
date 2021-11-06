@@ -174,3 +174,83 @@ const personObj = {
 };
 
 console.log(personObj);
+
+// Array Function: map() - It iterates the array for us and we can pass a callback function to perform some operation
+// on the each array item. The updated values can be returned by the callback function to create a new array
+
+console.log("......Array Function: map()......");
+const mArra = [1, 2, 3, 4, 5];
+
+// let newArrr = [];
+
+// const doubleValues = (item) => {
+//   return item * 2;
+// };
+// for (let i = 0; i < mArra.length; i++) {
+//   newArrr.push(doubleValues(mArra[i]));
+// }
+
+// Using map
+
+let newArrr = mArra.map((item) => {
+  console.log(item);
+  return item * 2;
+});
+
+console.log(newArrr);
+
+// map on objects
+const people = [
+  {
+    name: "John Lark",
+    experience: 10,
+    type: "comercial",
+  },
+  {
+    name: "John Doe",
+    experience: 20,
+    type: "private",
+  },
+  {
+    name: "John Smith",
+    experience: 5,
+    type: "Teacher",
+  },
+];
+
+let newArrr2 = people.map((item) => {
+  console.log(item);
+  return {
+    name: item.name,
+    experience: item.experience,
+  };
+});
+
+console.log(newArrr2);
+
+// Array Function: reduce() - Just like map(), reduce() also iterates through entire array and it accepts aa callback function to perform some action on the array element.
+// The difference here is that reduce() passes the result of the callback from one iteration to the next one. This callback result is called accumulator. The accumulator can be pretty much anything (integer, string, object or even array) andd must be instantiate and passes when calling reduce()
+// Syntax -
+// arr.reduce((acc, item) => {
+//   // Callback function body
+// }. acc_default_value);
+
+console.log(".....array Function: reduce().....");
+
+const numArr = [1, 2, 3, 4, 5];
+const result = numArr.reduce((acc, item) => {
+  // console.log(item);
+  console.log(acc);
+  // return acc;
+  return acc + item; // Calculate the sum
+}, 0); // If we dont pass this 0 here this function will exclude the index 0 value o/p be - 2 3 4 5
+
+console.log(result);
+
+// reduce() on Objects
+
+const res = people.reduce((acc, item) => {
+  console.log(item.experience);
+  console.log(acc);
+  return acc + item.experience;
+}, 0);

@@ -104,5 +104,7 @@ Templet Strings\
 Arrow Function
 
 Day-12 -
+
 Rest Operator and Spread Operator\
-Destructuring
+Destructuring\
+Array Function: map(), reduce()
