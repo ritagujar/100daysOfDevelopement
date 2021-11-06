@@ -102,3 +102,6 @@ Day-11 -
 ES6 - Variables 'let' and 'const'\
 Templet Strings\
 Arrow Function
+
+Day-12 -
+Rest Operator and Spread Operator
