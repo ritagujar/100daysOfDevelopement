@@ -98,3 +98,79 @@ let myObj3 = { ...myObj1, ...myObj2 };
 console.log({ ...myObj1 });
 console.log({ ...myObj2 });
 console.log(myObj3);
+
+// DESTRUCTURING - It allows us to "unpack" arrays object into a bunch of variables which makes working with array and objects a bit more convenient
+
+// Working with arrays we use square brakets []
+// Working with objects we use curly brakets {}
+
+// Syntax:
+// let[a, b] = [1, 2, 3, 4, 5]
+// let {name, age} = {firstName:'John', lastName: 'Wick', age:30}
+
+console.log(".....DISTRUCTURING.....");
+
+const name1 = "John Manuel Lark";
+const num1Arr = name1.split(" ");
+
+console.log(num1Arr);
+
+// let fName = num1Arr[0];
+// let midName = num1Arr[1];
+
+// Using DESTRUCTURING
+
+// Here sequence of variables matters
+// let [lName, fName] = num1Arr will print Lark Manuel
+let [fName, midName, lName] = num1Arr;
+
+console.log(fName);
+console.log(midName);
+console.log(lName);
+
+// Destructuring for Objects
+
+const person = {
+  firstName2: "John",
+  midName2: "Manuel",
+  lastName2: "Lark",
+  age: 20,
+};
+
+// Here the sequence dosent matters
+// let {lastName2, firstName2} = person  will also print John Lark
+// Whenever working with objects use variable name same as that of key inside that object.  let {a, b} = person   will return undefined
+
+let { a, b } = person;
+console.log(a, b); // will return undefined
+
+let { firstName2, lastName2 } = person;
+console.log(firstName2, lastName2);
+
+// Creating an objects
+
+let fiName = "John";
+let laName = "Lark";
+let age1 = 20;
+
+// const personObj = {
+//   fiName: fiName,
+//   laName: laName,
+//   age1: age1,
+// };
+
+// or
+// const personObj = {
+//   fiName,
+//   laName,
+//   age1,
+// };
+
+// Or if we want different key names
+const personObj = {
+  first: fiName,
+  last: laName,
+  age: age1,
+};
+
+console.log(personObj);
