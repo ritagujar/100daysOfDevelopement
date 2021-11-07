@@ -27,3 +27,40 @@ $("button").html("<em>Hey</em>");
 // Manupulating Attribute
 console.log($("img").attr("src")); // Will print src on console
 $("a").attr("href", "https://www.yahoo.com");
+
+// Adding Event Listener
+
+$("h1").click(function () {
+  $("h1").css("color", "purple");
+});
+
+// Adding Event Listener to buttons
+
+// Using plane JS
+
+for (var i = 0; i < 5; i++) {
+  document.querySelectorAll("button")[i].addEventListener("click", function () {
+    document.querySelector("h1").style.color = "Red";
+  });
+}
+
+// Using jQuery - Click
+
+$("button").click(function () {
+  $("h1").css("color", "Purple");
+});
+
+// keyPress Event
+
+$("input").keypress(function (event) {
+  console.log(event.key);
+});
+
+$(document).keypress(function (event) {
+  $("h1").text(event.key);
+});
+
+// mouseover
+$("h1").on("mouseover", function () {
+  $("h1").css("color", "blue");
+});
