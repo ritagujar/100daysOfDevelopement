@@ -114,3 +114,7 @@ Callbacks and Async Operations Promises, Chaining Promises
 Day-13 -
 
 jQuery -
+
+Selecting Elements with jQuery\
+Manupulating a Styles with jQuery, Adding and removing a Class\
+Manupulating text and Attribute with jQuery
