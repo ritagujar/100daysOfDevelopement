@@ -118,4 +118,6 @@ jQuery -
 Selecting Elements with jQuery\
 Manupulating a Styles with jQuery, Adding and removing a Class\
 Manupulating text and Attribute with jQuery\
-Adding Event Listeners
+Adding Event Listeners\
+Adding and Removing Elements\
+Website Animation using jQuery

@@ -64,3 +64,43 @@ $(document).keypress(function (event) {
 $("h1").on("mouseover", function () {
   $("h1").css("color", "blue");
 });
+
+// Adding and Removing Elements
+
+// Create a New button before h1
+$("h1").before("<button>Before</button>");
+$("h1").after("<button>After</button>");
+$("h1").prepend("<button>Prepend</button>");
+$("h1").append("<button>Append</button>");
+
+// Animation
+
+// $("button").on("click", function () {
+//   $("h1").hide();
+//   //   $("h1").show();  // IF we want to show
+// });
+
+// Toggle Hide and Show
+// $("button").on("click", function () {
+//   $("h1").toggle();
+// });
+
+// $("button").on("click", function () {
+//   $("h1").fadeOut();
+//   $("h1").fadeIn(); // To apear the text
+// });
+
+// $("button").on("click", function () {
+//   $("h1").fadeToggle();
+// });
+
+// slideUp, slideDown, slideToggle
+// $("button").on("click", function () {
+//   $("h1").slideToggle();
+// });
+
+// To add Custome CSS
+
+$("button").on("click", function () {
+  $("h1").animate({ opacity: 0.5 });
+});
