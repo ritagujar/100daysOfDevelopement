@@ -67,3 +67,26 @@ var person = {
 
 person.getName();
 person.parents.getName();
+
+// Constructor
+var people = {
+  name: "Smith",
+  yearOfBirth: 2001,
+  job: "Secret Agent",
+};
+
+function People(pName, pYearOfBirth, pJob) {
+  (this.name = pName), (this.yearOfBirth = pYearOfBirth), (this.job = pJob);
+
+  this.calculateAge = function () {
+    console.log(2021 - this.yearOfBirth);
+  };
+}
+
+var john = new People("John", 1992, "Pilot");
+console.log(john);
+john.calculateAge();
+
+var rita = new People("Rita", 2001, "CSE");
+console.log(rita);
+rita.calculateAge();
