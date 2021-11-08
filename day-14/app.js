@@ -42,3 +42,28 @@ var video = {
 };
 
 console.log(video.getVideoName());
+
+// This Keyword
+
+var firstName = "Mark";
+var person = {
+  firstName: "Jack",
+  yearOfBirth: 1990,
+  job: "Pilot",
+  getName: function () {
+    console.log(this.firstName); // This will refere to the local varible name of person object  o/p - Jack
+    console.log(firstName); //this will refere to the globel variable name   o/p - Mark
+  },
+
+  parents: {
+    firstName: "Ryan",
+    yearOfBirth: 1985,
+    job: "Pilot",
+    getName: function () {
+      console.log(this.firstName);
+    },
+  },
+};
+
+person.getName();
+person.parents.getName();

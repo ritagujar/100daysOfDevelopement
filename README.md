@@ -122,6 +122,7 @@ Adding Event Listeners\
 Adding and Removing Elements\
 Website Animation using jQuery
 
-Day-14 - 
+Day-14 -
 
-JavaScript - Object Oriented Programming
+JavaScript - Object Oriented Programming\
+this Keyword
