@@ -125,4 +125,5 @@ Website Animation using jQuery
 Day-14 -
 
 JavaScript - Object Oriented Programming\
-this Keyword, Constructor
+this Keyword, Constructor\
+HTTP Request and Response, JSON
