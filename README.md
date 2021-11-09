@@ -132,4 +132,5 @@ Day-15 -
 
 JavaScript Projects -
 
-Color-Flipper
+Color-Flipper\
+Counter
