@@ -28,9 +28,17 @@ const deadline = document.querySelector(".deadline");
 const items = document.querySelectorAll(".deadline-format h4");
 // console.log(items);
 
+let tempDate = new Date();
+let tempYear = tempDate.getFullYear();
+let tempMonth = tempDate.getMonth();
+let tempDay = tempDate.getDate();
 // Months and days are Zero index based
 // If we pass 4 for month it will take month as a may
-let futureDate = new Date(2021, 10, 15, 5, 30, 0);
+
+// let futureDate = new Date(2021, 10, 15, 5, 30, 0);
+
+// Will check what is the current date and will add 10 days to it
+const futureDate = new Date(tempYear, tempMonth, tempDay + 10, 11, 30, 0);
 console.log(futureDate);
 
 const year = futureDate.getFullYear();
@@ -46,7 +54,7 @@ const date = futureDate.getDate();
 
 const weekday = weekdays[futureDate.getDay()];
 
-giveaway.textContent = `giveaway ends on ${weekday}, ${date} ${month} ${year} ${hours}:${minutes} `;
+giveaway.textContent = `giveaway ends on ${weekday}, ${date} ${month} ${year} ${hours}:${minutes}am `;
 
 // Future time in ms
 
@@ -98,6 +106,14 @@ function getRemainingTime() {
   items.forEach(function (item, index) {
     item.innerHTML = format(values[index]);
   });
+
+  if (t < 0) {
+    clearInterval(countdown);
+    deadline.innerHTML = `<h4 class='expired'>sorry this giveaway Has expired</h4>`;
+  }
 }
+
+// Countdown
+let countdown = setInterval(getRemainingTime, 1000);
 
 getRemainingTime();
