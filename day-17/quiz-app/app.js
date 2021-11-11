@@ -1,4 +1,5 @@
 const startButton = document.getElementById("start-btn");
+const nextButton = document.getElementById("next-btn");
 const questionContainerElement = document.getElementById("question-container");
 
 const questionElement = document.getElementById("question");
@@ -18,11 +19,31 @@ function startGame() {
 }
 
 function setNextQuestion() {
+  resetState();
   showQuestion(shuffledQuestion[currentQuestionIndex]);
 }
 
 function showQuestion(question) {
   questionElement.innerHTML = question.question;
+  question.answers.forEach((answer) => {
+    const button = document.createElement("button");
+    button.innerText = answer.text;
+    button.classList.add("btn");
+
+    if (answer.correct) {
+      button.dataset.correct = answer.correct;
+    }
+
+    button.addEventListener("click", selectAnswer);
+    answerButtonsElements.appendChild(button);
+  });
+}
+
+function resetState() {
+  nextButton.classList.add("hide");
+  while (answerButtonsElements.firstChild) {
+    answerButtonsElements.removeChild(answerButtonsElements.firstChild);
+  }
 }
 
 function selectAnswer() {}
