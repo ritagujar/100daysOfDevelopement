@@ -8,6 +8,7 @@ const boardHeight = 300;
 let timerId;
 let xDirection = -2;
 let yDirection = 2;
+let score = 0;
 
 const userStart = [230, 10];
 let currentPosition = userStart;
@@ -129,6 +130,15 @@ function checkForCollision() {
       allBlocks[i].classList.remove("block");
       blocks.splice(i, 1);
       changeDirection();
+      score++;
+      scoreDisplay.innerHTML = score;
+
+      //   check Fo Win
+      if (blocks.length === 0) {
+        scoreDisplay.innerHTML = "YOU WIN";
+        clearInterval(timerId);
+        document.removeEventListener("keydown", moveUser);
+      }
     }
   }
 
@@ -141,8 +151,17 @@ function checkForCollision() {
     changeDirection();
   }
 
-  //   Check for game over
+  //   Check for user collision
+  if (
+    ballCurrentPosition[0] > currentPosition[0] &&
+    ballCurrentPosition[0] < currentPosition[0] + blockWidth &&
+    ballCurrentPosition[1] > currentPosition[1] &&
+    ballCurrentPosition[1] < currentPosition[1] + blockHeight
+  ) {
+    changeDirection();
+  }
   if (ballCurrentPosition[1] <= 0) {
+    //   Check for game over
     clearInterval(timerId);
     scoreDisplay.innerHTML = "You lose";
     document.removeEventListener("keydown", moveUser);
