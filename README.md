@@ -156,3 +156,9 @@ Day-20 -
 
 2d Breakout Game\
 Rock Paper Scissor
+
+### REACT
+
+What is React?\
+What is Component?\
+Base Syntax
