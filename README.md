@@ -161,4 +161,5 @@ Rock Paper Scissor
 
 What is React?\
 What is Component?\
-Base Syntax
+Base Syntax\
+Creating Components
