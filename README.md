@@ -35,7 +35,7 @@ Day-4 -
 Display Values-Inline Block\
 POSITIONING - Static, Relative, Absolute, Sticky, Fixed, Floating\
 HANDLING OVERFLOW - Visible, Hidden, Scroll, Auto\
-BOX MODEL,
+BOX MODEL\
 ADDING SHADOW - Text Shadow, Box Shadow,
 COMBINATORS\
 PSEUDO CLASSES - focus, disabled, active, required\
@@ -44,7 +44,7 @@ GRADIENTS - Linear Gradient and Radial Gradient\
 PRACTICE PROBLEM OF CSS
 
 Day-5 -
-LAYOUTS - Flex, Flex Item, Grid
+LAYOUTS - Flex, Flex Item, Grid\
 TRANSFORM PROPERTIES,
 TRANSITION PROPERTIES,
 ANIMATION PROPERTY
@@ -57,11 +57,11 @@ Variables,
 DataTypes,
 Operators,
 Expressions,
-Numbers,
+Numbers\
 In-Built Number Functions,
 Strings, JS String functions,
 Null and Undefined Values,
-Conditional statements,
+Conditional statements\
 Arithmatic Operators,
 Assignment Operators,
 Comparison and Logical Operators,
