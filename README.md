@@ -159,7 +159,14 @@ Rock Paper Scissor
 
 ### REACT
 
+Day-21 -
+
 What is React?\
 What is Component?\
 Base Syntax\
-Creating Components
+Creating Components\
+Props, States
+
+Day-22 -
+
+Handling Events, Changing States
