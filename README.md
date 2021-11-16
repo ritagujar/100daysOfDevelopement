@@ -169,4 +169,7 @@ Props, States
 
 Day-22 -
 
-Handling Events, Changing States
+Handling Events\
+Changing States\
+Binding\
+Styling Components
