@@ -198,4 +198,8 @@ Dynamic Styles
 Day-26 -
 
 Todo List\
-Styling Commponent
+Styling Commponent\
+Inline Styling\
+Setting CSS Class Dynamically\
+Styled Components\
+CSS Modules
