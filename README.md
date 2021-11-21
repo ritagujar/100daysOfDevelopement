@@ -203,3 +203,8 @@ Inline Styling\
 Setting CSS Class Dynamically\
 Styled Components\
 CSS Modules
+
+Day-27 -
+
+Debugging React Apps\
+React Practice Project
