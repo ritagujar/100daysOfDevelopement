@@ -4,7 +4,10 @@ import Card from "../UI/Card/Card";
 import classes from "./Login.module.css";
 import Button from "../UI/Button/Button";
 
-// This reducer function is created outside the fuction because it dosen't need to interact with anything defined inside the component function. All the data which is required and used inside the reducer function will be pass into this function when it's execute by react automatically
+// This reducer function is created outside the fuction because it dosen't need to interact with anything defined
+//inside the component function. All the data which is required and used inside the reducer function
+//will be pass into this function when it's execute by react automatically
+
 const emailReducer = (state, action) => {
   if (action.type === "USER_INPUT") {
     return { value: action.val, isValid: action.val.includes("@") };
@@ -54,32 +57,34 @@ const Login = (props) => {
     };
   }, []);
 
-  // useEffect(() => {
-  //   const identifire = setTimeout(() => {
-  //     console.log("Checking form Validity!");
-  //     setFormIsValid(
-  //       enteredEmail.includes("@") && enteredPassword.trim().length > 6
-  //     );
-  //   }, 500);
+  const { isValid: emailIsValid } = emailState;
+  const { isValid: passwordIsValid } = passwordState;
 
-  //   // The cleanup function will call when react unmounts the component. Also when the dependencies changes, it first run the cleanup function then re-runs the funtion.
-  //   return () => {
-  //     console.log("CLEANUP");
-  //     clearTimeout(identifire);
-  //   };
-  // }, [enteredEmail, enteredPassword]);
+  useEffect(() => {
+    const identifire = setTimeout(() => {
+      console.log("Checking form Validity!");
+      setFormIsValid(emailIsValid && passwordIsValid);
+    }, 500);
+
+    // The cleanup function will call when react unmounts the component. Also when the dependencies changes, it first run the cleanup function then re-runs the funtion.
+
+    return () => {
+      console.log("CLEANUP");
+      clearTimeout(identifire);
+    };
+  }, [emailIsValid, passwordIsValid]);
 
   const emailChangeHandler = (event) => {
     // setEnteredEmail(event.target.value);
     dispatchEmail({ type: "USER_INPUT", val: event.target.value });
-    setFormIsValid(event.target.value.includes("@") && passwordState.isValid);
+    // setFormIsValid(event.target.value.includes("@") && passwordState.isValid);
   };
 
   const passwordChangeHandler = (event) => {
     // setEnteredPassword(event.target.value);
     dispatchPassword({ type: "USER_INPUT", val: event.target.value });
 
-    setFormIsValid(emailState.isValid && event.target.value.trim().length > 6);
+    // setFormIsValid(emailState.isValid && event.target.value.trim().length > 6);
   };
 
   const validateEmailHandler = () => {
