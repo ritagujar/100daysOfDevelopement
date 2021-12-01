@@ -1,4 +1,4 @@
-import React, { isValidElement, useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import MoviesList from "./components/MoviesList";
 import "./App.css";
 
@@ -7,12 +7,12 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  async function fetchMoviesHandler() {
+  const fetchMoviesHandler = useCallback(async () => {
     setIsLoading(true);
     setError(null);
 
     try {
-      const response = await fetch("https://swapi.dev/api/film/");
+      const response = await fetch("https://swapi.dev/api/films/");
 
       if (!response.ok) {
         throw new Error("Something went wrong!");
@@ -33,7 +33,12 @@ function App() {
       setError(error.message);
     }
     setIsLoading(false);
-  }
+  });
+
+  // Using useEffect to fetch the list, once we load the page and not only on button Click
+  useEffect(() => {
+    fetchMoviesHandler();
+  }, []);
 
   let content = <p>Found no Movies.</p>;
 
