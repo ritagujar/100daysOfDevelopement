@@ -240,3 +240,13 @@ Custom Context Provider
 Day-33, 34, 35, 36 -
 
 Practice Project - Food Order App
+
+Day-34 -
+
+Component Re-Evaluation\
+React.memo()\
+useCallback()\
+Sending Http Request\
+Sending GET Request\
+async await\
+Handling Http Errors
