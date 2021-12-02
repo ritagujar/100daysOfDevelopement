@@ -241,12 +241,21 @@ Day-33, 34, 35, 36 -
 
 Practice Project - Food Order App
 
-Day-34 -
+Day-37 -
 
+Movie-app\
 Component Re-Evaluation\
 React.memo()\
 useCallback()\
 Sending Http Request\
-Sending GET Request\
+Sending GET, POST Request\
 async await\
 Handling Http Errors
+
+Day-38 -
+
+Counter-app\
+Task-app\
+Custom Hooks\
+input-form\
+Forms and User Input
