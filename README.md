@@ -260,3 +260,9 @@ Custom Hooks\
 Using Firebase Database\
 input-form\
 Forms and User Input
+
+Day-39 -
+
+Validation on Form Submit, Lost Focus & Keystroke\
+Using a Custom Hook\
+Custom Hook Using useReducer()
