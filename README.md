@@ -267,3 +267,12 @@ Validation on Form Submit, Lost Focus & Keystroke\
 Using a Custom Hook\
 Custom Hook Using useReducer()
 Food Order App - Adding Http & Form
+
+Day-40 -
+
+REDUX -\
+Creating and Providing Redux Store\
+useSelector(), useDispatch() Hooks\
+Dispatching Actions\
+Redux with Class-based Components, 'connect' function\
+Redux Toolkit, createSlice
