@@ -14,8 +14,8 @@ const Counter = () => {
   //The function we pass to useSelector will be executed by react-redux
   //which then basically determines which piece of data  we wanna extract from out store.
 
-  const counter = useSelector((state) => state.counter);
-  const show = useSelector((state) => state.showCounter);
+  const counter = useSelector((state) => state.counter.counter);
+  const show = useSelector((state) => state.counter.showCounter);
 
   const incrementHandler = () => {
     dispatch(counterActions.increment());
