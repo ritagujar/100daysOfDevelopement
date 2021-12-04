@@ -2,7 +2,7 @@ import classes from "./Counter.module.css";
 // import { Component } from "react";
 // import { connect } from 'react-redux'
 import { useSelector, useDispatch } from "react-redux";
-import { counterActions } from "../store/index";
+import { counterActions } from "../store/counter";
 
 const Counter = () => {
   // useDispatch() Hook gives us back the dispatch function which we can execute.
