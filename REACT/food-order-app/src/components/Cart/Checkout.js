@@ -43,7 +43,7 @@ const Checkout = (props) => {
       enteredCityIsValid &&
       enteredPostalCodeIsValid;
 
-    if (formIsValid) {
+    if (!formIsValid) {
       return;
     }
 
@@ -88,7 +88,7 @@ const Checkout = (props) => {
         <label htmlFor="postal">Postal Code</label>
         <input type="text" id="postal" ref={postalCodeInputRef} />
         {!formInputValidity.postalCode && (
-          <p>Please Enter a Valid Postal Code</p>
+          <p>Please Enter a Valid Postal Code (5 cbharacters long)</p>
         )}
       </div>
       <div className={cityControlClasses}>
