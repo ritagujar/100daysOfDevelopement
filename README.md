@@ -276,3 +276,14 @@ useSelector(), useDispatch() Hooks\
 Dispatching Actions\
 Redux with Class-based Components, 'connect' function\
 Redux Toolkit, createSlice
+
+Day-41 -
+
+Redux Cart App
+Revision on Redux Basics
+
+Day-42 -
+
+Advanced Redux-\
+Redux & Async\
+Handling HTTP States & Feedback with Redux
