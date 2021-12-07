@@ -279,7 +279,7 @@ Redux Toolkit, createSlice
 
 Day-41 -
 
-Redux Cart App
+Redux Cart App\
 Revision on Redux Basics
 
 Day-42 -
@@ -290,5 +290,5 @@ Handling HTTP States & Feedback with Redux
 
 Day-43 -
 
-Action Ceater - Thunk\
+Action Creater - Thunk\
 Redux DevTools
