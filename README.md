@@ -292,3 +292,11 @@ Day-43 -
 
 Action Creater - Thunk\
 Redux DevTools
+
+Day-44 -
+
+React Router -\
+Defining & Using Routes\
+Working with Link & NavLink\
+Adding & Extracting Dynamic Routes with Params\
+Nested Routes
