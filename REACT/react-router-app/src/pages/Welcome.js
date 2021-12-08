@@ -1,12 +1,11 @@
 import { Route, Routes } from "react-router-dom";
-import Products from "./Products";
 
 const Welcome = () => {
   return (
     <section>
       <h1>The Welcome Page</h1>
       <Routes>
-        <Route path="/new-user" element={<Products />} />
+        <Route path="/new-user" element={<p>Welcome new user</p>} />
       </Routes>
     </section>
   );
