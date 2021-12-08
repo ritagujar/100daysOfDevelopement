@@ -10,14 +10,9 @@ function App() {
       <MainHeader />
       <main>
         <Routes>
-          <Route path="/welcome" element={<Welcome />} />
+          <Route path="/welcome/*" element={<Welcome />} />
           <Route path="/products" element={<Products />} />
-          {/* Here productId is a dynamic segment and it takes any value */}
-          {/* The identifire which we specified here after the colon as a key in the params object which we get as  a const */}
-          <Route
-            path="/product-detail/:productId"
-            element={<ProductDetails />}
-          />
+          <Route path="/products/:productId" element={<ProductDetails />} />
         </Routes>
       </main>
     </div>

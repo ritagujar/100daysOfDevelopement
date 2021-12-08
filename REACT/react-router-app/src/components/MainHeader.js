@@ -8,12 +8,12 @@ const MainHeader = () => {
         <ul>
           <li>
             {/* Link component is use to prevent the browser default reload/refresh after clicking on the links */}
-            <NavLink acticeClassName={classes.active} to="/welcome">
+            <NavLink activeclasscame={classes.active} to="/welcome">
               Welcome
             </NavLink>
           </li>
           <li>
-            <NavLink acticeClassName={classes.active} to="/products">
+            <NavLink activeclasscame={classes.active} to="/products">
               Products
             </NavLink>
           </li>
