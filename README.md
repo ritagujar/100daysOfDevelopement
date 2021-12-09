@@ -308,5 +308,4 @@ Programmatic Navigation\
 useHistory(), useLocation() Hook\
 Prompt Component\
 Query Parameters\
-Deploying React App - \
 Lazy Loading
