@@ -300,3 +300,13 @@ Defining & Using Routes\
 Working with Link & NavLink\
 Adding & Extracting Dynamic Routes with Params\
 Nested Routes
+
+Day-45 -
+
+React Router Practice Project -\
+Programmatic Navigation\
+useHistory(), useLocation() Hook\
+Prompt Component\
+Query Parameters\
+Deploying React App - \
+Lazy Loading
