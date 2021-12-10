@@ -7,11 +7,11 @@ const Wrap = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("./images/model-s.jpg");
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-image: ${(props) => `url('/images/${props.bgImage}')`};
 `;
 
 const ItemText = styled.div`
@@ -57,17 +57,23 @@ const DownArrow = styled.img`
 
 const Buttons = styled.div``;
 
-function Section() {
+function Section({
+  title,
+  description,
+  backgroundImage,
+  leftBtnText,
+  rightBtnText,
+}) {
   return (
-    <Wrap>
+    <Wrap bgImage={backgroundImage}>
       <ItemText>
-        <h1>Model S</h1>
-        <p>Order Online for Touchless Delivery</p>
+        <h1>{title}</h1>
+        <p>{description}</p>
       </ItemText>
       <Buttons>
         <ButtonGroup>
-          <LeftButton>Custom Order</LeftButton>
-          <RightButton>Existing Inventory</RightButton>
+          <LeftButton>{leftBtnText}</LeftButton>
+          {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
         </ButtonGroup>
         <DownArrow src="./images/down-arrow.svg"></DownArrow>
       </Buttons>
