@@ -10,6 +10,7 @@ import {
   makeStyles,
 } from "@material-ui/core";
 import { getUsers } from "./../Service/api";
+import { deleteUser } from "./../Service/api";
 import { useNavigate } from "react-router-dom";
 
 const useStyles = makeStyles({
@@ -46,6 +47,11 @@ const AllUsers = () => {
     setUsers(response.data);
   };
 
+  const deleteUserData = async (id) => {
+    await deleteUser(id);
+    getAllUsers();
+  };
+
   return (
     <Table className={classes.table}>
       <TableHead>
@@ -75,7 +81,11 @@ const AllUsers = () => {
               >
                 Edit
               </Button>
-              <Button variant="contained" color="secondary">
+              <Button
+                variant="contained"
+                color="secondary"
+                onClick={() => deleteUserData(user.id)}
+              >
                 Delete
               </Button>
             </TableCell>
