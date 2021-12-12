@@ -16,31 +16,31 @@
     },
     {
       "name": "KL Rahul",
-      "username": "klrahul",
+      "username": "KL Rahul",
       "email": "rahul@gmail.com",
       "phone": "7458965874",
-      "id": 5
+      "id": 3
     },
     {
       "name": "Shikhar Dhawan",
       "username": "dhawansikhar",
       "email": "dhawan@gmail.com",
       "phone": "4569874563",
-      "id": 6
+      "id": 4
     },
     {
       "name": "Bumrah",
-      "username": "Boom",
+      "username": "Boom Boom",
       "email": "boom@gmail.com",
       "phone": "9823456788",
-      "id": 7
+      "id": 5
     },
     {
       "name": "Mohd Shami",
       "username": "shami",
       "email": "shami@gmail.com",
       "phone": "8763527638",
-      "id": 8
+      "id": 6
     }
   ]
 }

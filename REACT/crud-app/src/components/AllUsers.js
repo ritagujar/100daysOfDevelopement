@@ -10,6 +10,7 @@ import {
   makeStyles,
 } from "@material-ui/core";
 import { getUsers } from "./../Service/api";
+import { useNavigate } from "react-router-dom";
 
 const useStyles = makeStyles({
   table: {
@@ -33,6 +34,7 @@ const useStyles = makeStyles({
 const AllUsers = () => {
   const [users, setUsers] = useState([]);
   const classes = useStyles();
+  const navigate = useNavigate();
 
   useEffect(() => {
     getAllUsers();
@@ -53,6 +55,7 @@ const AllUsers = () => {
           <TableCell>Username</TableCell>
           <TableCell>Email</TableCell>
           <TableCell>Phone</TableCell>
+          <TableCell></TableCell>
         </TableRow>
       </TableHead>
       <TableBody>
@@ -63,6 +66,19 @@ const AllUsers = () => {
             <TableCell>{user.username}</TableCell>
             <TableCell>{user.email}</TableCell>
             <TableCell>{user.phone}</TableCell>
+            <TableCell>
+              <Button
+                variant="contained"
+                color="primary"
+                style={{ marginRight: 10 }}
+                onClick={() => navigate(`/edit/${user.id}`)}
+              >
+                Edit
+              </Button>
+              <Button variant="contained" color="secondary">
+                Delete
+              </Button>
+            </TableCell>
           </TableRow>
         ))}
       </TableBody>
