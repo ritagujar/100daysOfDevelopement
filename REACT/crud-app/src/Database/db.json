@@ -15,13 +15,6 @@
       "id": 2
     },
     {
-      "name": "Mohd Shami",
-      "username": "mohdshami",
-      "email": "shami@gmail.com",
-      "phone": "7896547896",
-      "id": 4
-    },
-    {
       "name": "KL Rahul",
       "username": "klrahul",
       "email": "rahul@gmail.com",
@@ -34,6 +27,20 @@
       "email": "dhawan@gmail.com",
       "phone": "4569874563",
       "id": 6
+    },
+    {
+      "name": "Bumrah",
+      "username": "Boom",
+      "email": "boom@gmail.com",
+      "phone": "9823456788",
+      "id": 7
+    },
+    {
+      "name": "Mohd Shami",
+      "username": "shami",
+      "email": "shami@gmail.com",
+      "phone": "8763527638",
+      "id": 8
     }
   ]
 }
