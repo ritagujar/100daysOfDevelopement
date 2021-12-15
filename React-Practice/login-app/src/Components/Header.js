@@ -7,9 +7,9 @@ const NavBar = styled.nav`
   width: 100%;
   height: 4rem;
   flex: 1;
+  background-color: blue;
   top: 0;
   position: sticky;
-  margin-top: 10px;
   align-items: center;
   padding: 0 40px;
 
@@ -60,7 +60,7 @@ const NavMenu = styled.div`
     font-size: 0.9rem;
     text-align: center;
     margin-left: 10px;
-    background-image: linear-gradient(to right, #ac3678, #d8314f, #fa8246);
+    background-image: linear-gradient(80deg, #ac3678, #d8314f, #fa8246);
     color: white;
   }
 
@@ -70,7 +70,7 @@ const NavMenu = styled.div`
     }
   }
 
-  @media (max-width: 628px) {
+  @media (max-width: 685px) {
     li {
       margin-right: 8px;
     }
