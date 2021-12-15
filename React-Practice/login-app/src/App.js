@@ -1,7 +1,9 @@
+import Header from "./Components/Header";
+
 function App() {
   return (
     <div>
-      <h1>Hello I am Making Login UI</h1>
+      <Header />
     </div>
   );
 }
