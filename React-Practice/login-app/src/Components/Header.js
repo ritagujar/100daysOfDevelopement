@@ -7,9 +7,9 @@ const NavBar = styled.nav`
   width: 100%;
   height: 4rem;
   flex: 1;
-  background-color: blue;
+  margin-top: 10px;
+  /* background-color: blue; */
   top: 0;
-  position: sticky;
   align-items: center;
   padding: 0 40px;
 

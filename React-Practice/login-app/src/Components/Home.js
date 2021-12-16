@@ -3,7 +3,9 @@ import Login from "./Login";
 import styled from "styled-components";
 
 const Heading = styled.div`
+  display: flex;
   text-align: center;
+  flex-direction: column;
   margin-top: 100px;
 
   h1 {
@@ -20,10 +22,16 @@ const Heading = styled.div`
     color: #727272;
     font-size: 1.3rem;
   }
+`;
 
-  @media (max-width: 715px) {
-    display: inline-block;
-    padding-left: 100px;
+const LinkTag = styled.div`
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  a {
+    color: white;
+    font-weight: 400;
   }
 `;
 
@@ -36,6 +44,9 @@ const Home = () => {
         <span>published every second month</span>
       </Heading>
       <Login />
+      <LinkTag>
+        <a href="/">Forgot Password?</a>
+      </LinkTag>
     </div>
   );
 };

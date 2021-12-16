@@ -4,7 +4,6 @@ import styled from "styled-components";
 const LoginContainer = styled.div`
   display: flex;
   justify-content: center;
-  padding: 0px 20px;
   input {
     height: 55px;
     width: 333px;
@@ -16,8 +15,8 @@ const LoginContainer = styled.div`
     border: none;
   }
   @media (max-width: 715px) {
-    display: inline-block;
-    padding: 0 170px;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
