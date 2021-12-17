@@ -1,4 +1,5 @@
 import React from "react";
+
 import styled from "styled-components";
 
 const LoginContainer = styled.div`
@@ -38,9 +39,14 @@ const LeftLogin = styled.div`
     text-align: left;
     padding: 15px;
     color: white;
+    cursor: pointer;
     font-size: 0.9rem;
     border: none;
     background-image: linear-gradient(80deg, #ac3678, #d8314f, #fa8246);
+  }
+
+  button:hover {
+    background-image: linear-gradient(-80deg, #fa8246, #ac3678, #d8314f);
   }
 `;
 const RightLogin = styled.div`
@@ -74,8 +80,8 @@ const Login = () => {
     <>
       <LoginContainer>
         <LeftLogin>
-          <input type="text" placeholder="Teacher/Student Id" />
           <input type="text" placeholder="8 Digit Pin" />
+          <input type="text" placeholder="Teacher/Student Id" />
           <button>Login To Your Account</button>
         </LeftLogin>
         <Slash>/</Slash>
@@ -88,6 +94,7 @@ const Login = () => {
             type="text"
             placeholder="Sign in with Google"
           />
+
           <input
             style={{
               borderImage: `linear-gradient(-80deg, #894b9d, #85411e)`,
@@ -96,6 +103,7 @@ const Login = () => {
             type="text"
             placeholder="Sign in with Facebook"
           />
+
           <input
             style={{
               borderImage: `linear-gradient(80deg, #894b9d, #85411e)`,

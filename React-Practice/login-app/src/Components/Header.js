@@ -64,6 +64,10 @@ const NavMenu = styled.div`
     color: white;
   }
 
+  button:hover {
+    background-image: linear-gradient(-80deg, #fa8246, #ac3678, #d8314f);
+  }
+
   @media (max-width: 886px) {
     input {
       width: 5rem;
@@ -102,6 +106,7 @@ const Header = () => {
           </li>
         </ul>
         <input type="text" />
+
         <button>Sign up</button>
       </NavMenu>
     </NavBar>
