@@ -309,3 +309,7 @@ useHistory(), useLocation() Hook.\
 Prompt Component\
 Query Parameters\
 Lazy Loading.
+
+Day-46, 47 -
+
+Created Tesla Clone
