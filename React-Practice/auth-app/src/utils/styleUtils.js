@@ -4,7 +4,7 @@ export const colors = {
   backgroungColor: "#FF4185",
 };
 
-export const getClickableLinkStyle = () => {
+export const LinkStyle = () => {
   return css`
     display: inline-block;
     position: relative;
