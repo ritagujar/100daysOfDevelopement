@@ -1,7 +1,11 @@
-import "./App.css";
+import Navigation from "./components/MainHeader/Navigation";
 
 function App() {
-  return <div className="App">React Authentication</div>;
+  return (
+    <>
+      <Navigation />
+    </>
+  );
 }
 
 export default App;
