@@ -45,11 +45,10 @@ const MenuItem = styled(Link)`
   }
 `;
 
-const BtnStyle = styled.button`
+const Button = styled.button`
   border: none;
   height: 30px;
   width: 80px;
-  border-radius: 2px;
   color: #ffffff;
   background-image: linear-gradient(80deg, #ac3678, #d8314f, #fa8246);
   cursor: pointer;
@@ -67,8 +66,8 @@ const Navigation = () => {
       <LogoText to="/">auth-app</LogoText>
       <Menu>
         <MenuItem to="/login">Login</MenuItem>
-        <MenuItem to="/register">Register</MenuItem>
-        <BtnStyle>Logout</BtnStyle>
+        <MenuItem to="/signup">Sign Up</MenuItem>
+        <Button>Logout</Button>
       </Menu>
     </StyledNavbar>
   );
