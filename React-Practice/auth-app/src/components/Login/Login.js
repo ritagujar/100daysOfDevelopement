@@ -15,7 +15,7 @@ const Login = () => {
       <SignUpContainer>
         <StyleText>Login</StyleText>
         <Text>
-          Don't have account? <LoginLink to="/signup">SignUp</LoginLink>now
+          Don't have an account? <LoginLink to="/signup">SignUp</LoginLink>now.
         </Text>
         <Card>
           <TextFiled>Your email</TextFiled>
@@ -26,6 +26,17 @@ const Login = () => {
             htmlFor=""
             placeholder="Enter password"
           ></input>
+          <LoginLink
+            style={{
+              display: "flex",
+              justifyContent: "flex-end",
+              marginTop: "10px",
+              fontSize: "1.1rem",
+            }}
+            to="/"
+          >
+            Forgot password?
+          </LoginLink>
           <Button>Sign up</Button>
         </Card>
       </SignUpContainer>

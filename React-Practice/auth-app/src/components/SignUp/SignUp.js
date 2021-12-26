@@ -15,7 +15,7 @@ const SignUp = () => {
       <SignUpContainer>
         <StyleText>Sign up</StyleText>
         <Text>
-          Already have an account? <LoginLink to="/login">Login</LoginLink>now
+          Already have an account? <LoginLink to="/login">Login</LoginLink>now.
         </Text>
         <Card>
           <div style={{ marginBottom: "7px" }}>
