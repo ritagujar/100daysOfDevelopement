@@ -20,7 +20,7 @@ const SignUp = () => {
         <Card>
           <div style={{ marginBottom: "7px" }}>
             <TextFiled>First Name</TextFiled>
-            <TextFiled style={{ marginLeft: "98px" }}>Last Name</TextFiled>
+            <TextFiled style={{ marginLeft: "127px" }}>Last Name</TextFiled>
           </div>
           <div>
             <input htmlFor="" placeholder="Enter first name"></input>
@@ -33,7 +33,11 @@ const SignUp = () => {
           <TextFiled>Your email</TextFiled>
           <input htmlFor="" placeholder="Enter email"></input>
           <TextFiled>Your password</TextFiled>
-          <input htmlFor="" placeholder="Enter password"></input>
+          <input
+            type="password"
+            htmlFor=""
+            placeholder="Enter password"
+          ></input>
           <Button>Sign up</Button>
         </Card>
       </SignUpContainer>
