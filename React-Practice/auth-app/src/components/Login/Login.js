@@ -19,7 +19,7 @@ const Login = () => {
         </Text>
         <Card>
           <TextFiled>Your email</TextFiled>
-          <input htmlFor="" placeholder="Enter email"></input>
+          <input type="email" htmlFor="" placeholder="Enter email"></input>
           <TextFiled>Your password</TextFiled>
           <input
             type="password"
@@ -37,7 +37,7 @@ const Login = () => {
           >
             Forgot password?
           </LoginLink>
-          <Button>Sign up</Button>
+          <Button type="submit">Sign up</Button>
         </Card>
       </SignUpContainer>
     </>
