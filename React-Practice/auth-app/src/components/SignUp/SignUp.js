@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   SignUpContainer,
   StyleText,
@@ -10,6 +10,39 @@ import {
 } from "./styles";
 
 const SignUp = () => {
+  const [userRegistration, setUserRegistration] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    password: "",
+  });
+
+  const [records, setRecords] = useState([]);
+
+  const handleInput = (event) => {
+    const name = event.target.name;
+    const value = event.target.value;
+    setUserRegistration({ ...userRegistration, [name]: value });
+    // console.log(name, value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const newRecords = {
+      ...userRegistration,
+      id: new Date().getTime().toString(),
+    };
+    console.log(records);
+    setRecords([...records, newRecords]);
+
+    setUserRegistration({
+      firstname: "",
+      lastname: "",
+      email: "",
+      password: "",
+    });
+  };
+
   return (
     <>
       <SignUpContainer>
@@ -23,22 +56,44 @@ const SignUp = () => {
             <TextFiled style={{ marginLeft: "127px" }}>Last Name</TextFiled>
           </div>
           <div>
-            <input htmlFor="" placeholder="Enter first name"></input>
+            <input
+              htmlFor=""
+              name="firstname"
+              placeholder="Enter first name"
+              value={userRegistration.firstname}
+              onChange={handleInput}
+            ></input>
             <input
               style={{ marginLeft: "17px" }}
               htmlFor=""
+              name="lastname"
               placeholder="Enter last name"
+              value={userRegistration.lastname}
+              onChange={handleInput}
             ></input>
           </div>
           <TextFiled>Your email</TextFiled>
-          <input type="email" htmlFor="" placeholder="Enter email"></input>
+          <input
+            type="email"
+            name="email"
+            htmlFor=""
+            placeholder="Enter email"
+            email
+            value={userRegistration.email}
+            onChange={handleInput}
+          ></input>
           <TextFiled>Your password</TextFiled>
           <input
             type="password"
             htmlFor=""
+            name="password"
             placeholder="Enter password"
+            value={userRegistration.password}
+            onChange={handleInput}
           ></input>
-          <Button type="submit">Sign up</Button>
+          <Button type="submit" onClick={handleSubmit}>
+            Sign up
+          </Button>
         </Card>
       </SignUpContainer>
     </>
