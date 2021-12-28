@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   SignUpContainer,
   StyleText,
@@ -10,6 +10,26 @@ import {
 } from "./styles";
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleEmail = (event) => {
+    setEmail(event.target.value);
+    console.log(email);
+  };
+
+  const handlePassword = (event) => {
+    setPassword(event.target.value);
+    console.log(password);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setEmail("");
+    setPassword("");
+    alert("Form Submited");
+  };
+
   return (
     <>
       <SignUpContainer>
@@ -19,12 +39,20 @@ const Login = () => {
         </Text>
         <Card>
           <TextFiled>Your email</TextFiled>
-          <input type="email" htmlFor="" placeholder="Enter email"></input>
+          <input
+            type="email"
+            htmlFor=""
+            placeholder="Enter email"
+            onChange={handleEmail}
+            value={email}
+          ></input>
           <TextFiled>Your password</TextFiled>
           <input
             type="password"
             htmlFor=""
             placeholder="Enter password"
+            onChange={handlePassword}
+            value={password}
           ></input>
           <LoginLink
             style={{
@@ -37,7 +65,9 @@ const Login = () => {
           >
             Forgot password?
           </LoginLink>
-          <Button type="submit">Sign up</Button>
+          <Button type="submit" onClick={handleSubmit}>
+            Sign up
+          </Button>
         </Card>
       </SignUpContainer>
     </>
