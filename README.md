@@ -314,6 +314,8 @@ Day-46, 47 -
 
 Created Tesla Clone
 
-Day-48 - 
+Day-48 -
 
-Created Crud App - Axios Call.
+Created Crud App -
+API Call using Axios.
+Axios - GET, POST, EDIT, DELETE.
