@@ -74,7 +74,7 @@ const SignUp = () => {
           </div>
           <TextFiled>Your email</TextFiled>
           <input
-            type="email"
+            type="text"
             name="email"
             htmlFor=""
             placeholder="Enter email"

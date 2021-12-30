@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import useInput from "../../hooks/use-input";
 import {
   SignUpContainer,
   StyleText,
@@ -9,27 +10,47 @@ import {
   LoginLink,
 } from "./styles";
 
+const isNotEmpty = (value) => value >= 6;
+const isEmail = (value) => value.includes("@");
+
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const {
+    value: emailValue,
+    isValid: emailIsValid,
+    // hasError: emailHasError,
+    valueChangedHandler: emailChangeHandler,
+    inputBlurHandler: emailBlurHandler,
+    reset: resetEmail,
+  } = useInput(isEmail);
 
-  const handleEmail = (event) => {
-    setEmail(event.target.value);
-    console.log(email);
-  };
+  const {
+    value: passwordValue,
+    isValid: passwordIsValid,
+    // hasError: emailHasError,
+    valueChangedHandler: passwordChangeHandler,
+    inputBlurHandler: passwordBlurHandler,
+    reset: resetPassword,
+  } = useInput(isNotEmpty);
 
-  const handlePassword = (event) => {
-    setPassword(event.target.value);
-    console.log(password);
-  };
+  let formIsValid = false;
 
-  const handleSubmit = (event) => {
+  if (emailIsValid && passwordIsValid) {
+    formIsValid = true;
+  }
+
+  const submitHandler = (event) => {
     event.preventDefault();
-    setEmail("");
-    setPassword("");
-    alert("Form Submited");
-  };
 
+    if (!formIsValid) {
+      return;
+    }
+
+    console.log("SUBMITED!!!");
+    console.log(emailValue);
+
+    resetEmail();
+    resetPassword();
+  };
   return (
     <>
       <SignUpContainer>
@@ -40,19 +61,21 @@ const Login = () => {
         <Card>
           <TextFiled>Your email</TextFiled>
           <input
-            type="email"
+            type="text"
             htmlFor=""
             placeholder="Enter email"
-            onChange={handleEmail}
-            value={email}
+            value={emailValue}
+            onChange={emailChangeHandler}
+            onBlur={emailBlurHandler}
           ></input>
           <TextFiled>Your password</TextFiled>
           <input
             type="password"
             htmlFor=""
             placeholder="Enter password"
-            onChange={handlePassword}
-            value={password}
+            vlaue={passwordValue}
+            onChange={passwordChangeHandler}
+            onBlur={passwordBlurHandler}
           ></input>
           <LoginLink
             style={{
@@ -65,7 +88,7 @@ const Login = () => {
           >
             Forgot password?
           </LoginLink>
-          <Button type="submit" onClick={handleSubmit}>
+          <Button type="submit" onClick={submitHandler}>
             Sign up
           </Button>
         </Card>
