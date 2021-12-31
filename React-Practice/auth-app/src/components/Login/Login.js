@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
+import "../../../src/index.css";
 import useInput from "../../hooks/use-input";
+import { useNavigate } from "react-router-dom";
 import {
   SignUpContainer,
   StyleText,
@@ -10,14 +12,15 @@ import {
   LoginLink,
 } from "./styles";
 
-const isNotEmpty = (value) => value >= 6;
+const isNotEmpty = (value) => value.length >= 6;
 const isEmail = (value) => value.includes("@");
 
 const Login = () => {
+  const navigate = useNavigate();
   const {
     value: emailValue,
     isValid: emailIsValid,
-    // hasError: emailHasError,
+    hasError: emailHasError,
     valueChangedHandler: emailChangeHandler,
     inputBlurHandler: emailBlurHandler,
     reset: resetEmail,
@@ -26,7 +29,7 @@ const Login = () => {
   const {
     value: passwordValue,
     isValid: passwordIsValid,
-    // hasError: emailHasError,
+    hasError: passwordHasError,
     valueChangedHandler: passwordChangeHandler,
     inputBlurHandler: passwordBlurHandler,
     reset: resetPassword,
@@ -50,7 +53,13 @@ const Login = () => {
 
     resetEmail();
     resetPassword();
+
+    navigate(-1);
   };
+  const emailClasses = emailHasError ? "form-control invalid" : "form-control";
+  const passwordClasses = passwordHasError
+    ? "form-control invalid"
+    : "form-control";
   return (
     <>
       <SignUpContainer>
@@ -61,6 +70,7 @@ const Login = () => {
         <Card>
           <TextFiled>Your email</TextFiled>
           <input
+            className={emailClasses}
             type="text"
             htmlFor=""
             placeholder="Enter email"
@@ -68,8 +78,13 @@ const Login = () => {
             onChange={emailChangeHandler}
             onBlur={emailBlurHandler}
           ></input>
+          {emailHasError && (
+            <p className="error-text">Please enter a valid email.</p>
+          )}
+
           <TextFiled>Your password</TextFiled>
           <input
+            className={passwordClasses}
             type="password"
             htmlFor=""
             placeholder="Enter password"
@@ -77,6 +92,12 @@ const Login = () => {
             onChange={passwordChangeHandler}
             onBlur={passwordBlurHandler}
           ></input>
+          {passwordHasError && (
+            <p className="error-text">
+              Please Enter a password more than 6 digits.
+            </p>
+          )}
+
           <LoginLink
             style={{
               display: "flex",
