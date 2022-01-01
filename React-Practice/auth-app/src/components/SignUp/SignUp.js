@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import useInput from "../../hooks/use-input";
+import "../../../src/index.css";
 import {
   SignUpContainer,
   StyleText,
@@ -18,7 +19,7 @@ const SignUp = () => {
   const {
     value: firstNameValue,
     isValid: firstNameIsValid,
-    // hasError: firstNameHasError,
+    hasError: firstNameHasError,
     valueChangedHandler: firstNameChangeHandler,
     inputBlurHandler: firstNameBlurHandler,
     reset: resetFirstName,
@@ -27,7 +28,7 @@ const SignUp = () => {
   const {
     value: lastNameValue,
     isValid: lastNameIsValid,
-    // hasError: lastNameHasError,
+    hasError: lastNameHasError,
     valueChangedHandler: lastNameChangeHandler,
     inputBlurHandler: lastNameBlurHandler,
     reset: resetLastName,
@@ -104,6 +105,17 @@ const SignUp = () => {
     resetPassword();
   };
 
+  const firstNameClass = firstNameHasError
+    ? "form-control invalid"
+    : "form-control";
+  const lastNameClass = lastNameHasError
+    ? "form-control invalid"
+    : "form-control";
+  const emailClass = emailHasError ? "form-control invalid" : "form-control";
+  const passwordClass = passwordHasError
+    ? "form-control invalid"
+    : "form-control";
+
   return (
     <>
       <SignUpContainer>
@@ -118,6 +130,7 @@ const SignUp = () => {
           </div>
           <div>
             <input
+              className={firstNameClass}
               htmlFor=""
               name="firstname"
               placeholder="Enter first name"
@@ -125,7 +138,9 @@ const SignUp = () => {
               onChange={firstNameChangeHandler}
               onBlur={firstNameBlurHandler}
             ></input>
+            {firstNameHasError && <p>Plese enter first name.</p>}
             <input
+              className={lastNameClass}
               style={{ marginLeft: "17px" }}
               htmlFor=""
               name="lastname"
@@ -134,9 +149,11 @@ const SignUp = () => {
               onChange={lastNameChangeHandler}
               onBlur={lastNameBlurHandler}
             ></input>
+            {lastNameHasError && <p>Please enter last name.</p>}
           </div>
           <TextFiled>Your email</TextFiled>
           <input
+            className={emailClass}
             type="text"
             name="email"
             htmlFor=""
@@ -146,8 +163,10 @@ const SignUp = () => {
             onChange={emailChangeHandler}
             onBlur={emailBlurHandler}
           ></input>
+          {emailHasError && <p>Please enter a valid email.</p>}
           <TextFiled>Your password</TextFiled>
           <input
+            className={passwordClass}
             type="password"
             htmlFor=""
             name="password"
@@ -156,6 +175,11 @@ const SignUp = () => {
             onChange={passwordChangeHandler}
             onBlur={passwordBlurHandler}
           ></input>
+          {passwordHasError && (
+            <p className="error-text">
+              Please Enter a password more than 6 digits.
+            </p>
+          )}
           <Button type="submit" onClick={submitHandler}>
             Sign up
           </Button>
