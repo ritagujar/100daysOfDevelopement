@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import useInput from "../../hooks/use-input";
 import {
   SignUpContainer,
   StyleText,
@@ -9,38 +10,98 @@ import {
   LoginLink,
 } from "./styles";
 
+const isNotEmpty = (value) => value.trim() !== "";
+const isEmail = (value) => value.includes("@");
+const passwordCheck = (value) => value.length >= 6;
+
 const SignUp = () => {
-  const [userRegistration, setUserRegistration] = useState({
-    firstname: "",
-    lastname: "",
-    email: "",
-    password: "",
-  });
+  const {
+    value: firstNameValue,
+    isValid: firstNameIsValid,
+    // hasError: firstNameHasError,
+    valueChangedHandler: firstNameChangeHandler,
+    inputBlurHandler: firstNameBlurHandler,
+    reset: resetFirstName,
+  } = useInput(isNotEmpty);
 
-  const [records, setRecords] = useState([]);
+  const {
+    value: lastNameValue,
+    isValid: lastNameIsValid,
+    // hasError: lastNameHasError,
+    valueChangedHandler: lastNameChangeHandler,
+    inputBlurHandler: lastNameBlurHandler,
+    reset: resetLastName,
+  } = useInput(isNotEmpty);
 
-  const handleInput = (event) => {
-    const name = event.target.name;
-    const value = event.target.value;
-    setUserRegistration({ ...userRegistration, [name]: value });
-    // console.log(name, value);
-  };
+  const {
+    value: emailValue,
+    isValid: emailIsValid,
+    hasError: emailHasError,
+    valueChangedHandler: emailChangeHandler,
+    inputBlurHandler: emailBlurHandler,
+    reset: resetEmail,
+  } = useInput(isEmail);
 
-  const handleSubmit = (event) => {
+  const {
+    value: passwordValue,
+    isValid: passwordIsValid,
+    hasError: passwordHasError,
+    valueChangedHandler: passwordChangeHandler,
+    inputBlurHandler: passwordBlurHandler,
+    reset: resetPassword,
+  } = useInput(passwordCheck);
+
+  // const [userRegistration, setUserRegistration] = useState({
+  //   firstname: "",
+  //   lastname: "",
+  //   email: "",
+  //   password: "",
+  // });
+
+  // const [records, setRecords] = useState([]);
+
+  // const handleInput = (event) => {
+  //   const name = event.target.name;
+  //   const value = event.target.value;
+  //   setUserRegistration({ ...userRegistration, [name]: value });
+  //   // console.log(name, value);
+  // };
+
+  let formIsValid = false;
+
+  if (firstNameIsValid && lastNameIsValid && emailIsValid && passwordIsValid) {
+    formIsValid = true;
+  }
+
+  const submitHandler = (event) => {
     event.preventDefault();
-    const newRecords = {
-      ...userRegistration,
-      id: new Date().getTime().toString(),
-    };
-    console.log(records);
-    setRecords([...records, newRecords]);
+    // const newRecords = {
+    //   ...userRegistration,
+    //   id: new Date().getTime().toString(),
+    // };
+    // console.log(records);
+    // setRecords([...records, newRecords]);
 
-    setUserRegistration({
-      firstname: "",
-      lastname: "",
-      email: "",
-      password: "",
-    });
+    // setUserRegistration({
+    //   firstname: "",
+    //   lastname: "",
+    //   email: "",
+    //   password: "",
+    // });
+
+    if (!formIsValid) {
+      return;
+    }
+
+    console.log("SUBMITTED");
+    console.log(firstNameValue);
+    console.log(lastNameValue);
+    console.log(emailValue);
+
+    resetFirstName();
+    resetLastName();
+    resetEmail();
+    resetPassword();
   };
 
   return (
@@ -60,16 +121,18 @@ const SignUp = () => {
               htmlFor=""
               name="firstname"
               placeholder="Enter first name"
-              value={userRegistration.firstname}
-              onChange={handleInput}
+              value={firstNameValue}
+              onChange={firstNameChangeHandler}
+              onBlur={firstNameBlurHandler}
             ></input>
             <input
               style={{ marginLeft: "17px" }}
               htmlFor=""
               name="lastname"
               placeholder="Enter last name"
-              value={userRegistration.lastname}
-              onChange={handleInput}
+              value={lastNameValue}
+              onChange={lastNameChangeHandler}
+              onBlur={lastNameBlurHandler}
             ></input>
           </div>
           <TextFiled>Your email</TextFiled>
@@ -79,8 +142,9 @@ const SignUp = () => {
             htmlFor=""
             placeholder="Enter email"
             email
-            value={userRegistration.email}
-            onChange={handleInput}
+            value={emailValue}
+            onChange={emailChangeHandler}
+            onBlur={emailBlurHandler}
           ></input>
           <TextFiled>Your password</TextFiled>
           <input
@@ -88,10 +152,11 @@ const SignUp = () => {
             htmlFor=""
             name="password"
             placeholder="Enter password"
-            value={userRegistration.password}
-            onChange={handleInput}
+            value={passwordValue}
+            onChange={passwordChangeHandler}
+            onBlur={passwordBlurHandler}
           ></input>
-          <Button type="submit" onClick={handleSubmit}>
+          <Button type="submit" onClick={submitHandler}>
             Sign up
           </Button>
         </Card>

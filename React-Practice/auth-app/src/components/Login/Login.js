@@ -12,8 +12,8 @@ import {
   LoginLink,
 } from "./styles";
 
-const isNotEmpty = (value) => value.length >= 6;
 const isEmail = (value) => value.includes("@");
+const passwordCheck = (value) => value.length >= 6;
 
 const Login = () => {
   const navigate = useNavigate();
@@ -33,7 +33,7 @@ const Login = () => {
     valueChangedHandler: passwordChangeHandler,
     inputBlurHandler: passwordBlurHandler,
     reset: resetPassword,
-  } = useInput(isNotEmpty);
+  } = useInput(passwordCheck);
 
   let formIsValid = false;
 
