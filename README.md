@@ -316,23 +316,42 @@ Created Tesla Clone
 
 Day-48 -
 
-Created Crud App -
-API Call using Axios.
-Axios - GET, POST, EDIT, DELETE.
+Created Crud App -\
+API Call using Axios.\
+Axios - GET, POST, EDIT, DELETE.\
 
 ### React Practice
 
 Day-49, 50 -
 
-Created Login UI -
-Added NavBar
-Added Left-Right Login
+Created Login UI -\
+Added NavBar\
+Added Left-Right Login\
 
 Day-51, 52 -
 
-Added Footer
-CSS Effects
+Added Footer\
+CSS Effects\
 
 Day-53 -
 
 Added Authentication on React Login
+
+Day-54 -
+
+Created Auth-app -\
+Added Sign Up and Login Page
+
+Day-55 -
+
+Added States To Login and Sign Up page
+
+Day-56, 57 -
+
+Updated Validation of Login page using useReducer() Hook\
+Added Error Validation
+
+Day-58 -
+
+Added Custom Hooks on SignUp page\
+Error Validation on SignUp page
