@@ -321,3 +321,18 @@ API Call using Axios.
 Axios - GET, POST, EDIT, DELETE.
 
 ### React Practice
+
+Day-49, 50 -
+
+Created Login UI -
+Added NavBar
+Added Left-Right Login
+
+Day-51, 52 -
+
+Added Footer
+CSS Effects
+
+Day-53 -
+
+Added Authentication on React Login
