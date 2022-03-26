@@ -12,7 +12,6 @@ const AddTodoSection = styled.div`
     line-height: 1.5rem;
     padding: 0 0.27rem;
   }
-
   input:focus {
     outline: none;
     border-color: #8b005d;
@@ -46,15 +45,27 @@ const Button = styled.button`
 
 const AddTodo = (props) => {
   const [enteredTodo, setEnteredTodo] = useState("");
+  const [isValid, setIsValid] = useState(true);
 
   const todoInputChangeHandler = (event) => {
+    if (event.target.value.trim().length > 0) {
+      setIsValid(true);
+    }
     setEnteredTodo(event.target.value);
   };
 
-  const addTodoHandler = (event) => {
+  const addTodoHandler = () => {
+    if (enteredTodo.trim().length === 0) {
+      setIsValid(false);
+      return;
+    }
     props.onAddTodos(enteredTodo);
     setEnteredTodo("");
   };
+
+  if (!isValid) {
+    alert("Add Todo!");
+  }
 
   return (
     <AddTodoSection>
