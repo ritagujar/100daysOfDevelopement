@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import TodoList from "../TodoList/TodoList";
 // import Button from "./Button";
 
 import AddTodo from "../AddTodo/AddTodo";
@@ -28,15 +29,22 @@ const Todo = () => {
     });
   };
 
+  let content = (
+    <p style={{ textAlign: "center" }}>No goals found. Maybe add one?</p>
+  );
+
+  if (addTodos.length > 0) {
+    content = <TodoList todoItems={addTodos} />;
+  }
+
   return (
     <>
       <Section>
         <TodoHeading>Todo List</TodoHeading>
         <TodoSection>
           <AddTodo onAddTodos={addTodoHandler} />
-          {/* <Button>Add Todo</Button> */}
         </TodoSection>
-        {addTodos.map((items, id) => items)}
+        {content}
       </Section>
     </>
   );
