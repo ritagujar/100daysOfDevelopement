@@ -356,7 +356,8 @@ Day-58 -
 Added Custom Hooks on SignUp page\
 Error Validation on SignUp page
 
-Day-59 -
+Day-59, 60 -
+
 Created TodoList -\
 TodoList UI\
-AddTodo Feature
+Features - AddTodo, Delete Todo
