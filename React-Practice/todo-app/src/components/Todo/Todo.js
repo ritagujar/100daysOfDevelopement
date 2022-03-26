@@ -12,7 +12,11 @@ const Section = styled.div`
   align-items: center;
   margin-top: 4rem;
 `;
-const TodoHeading = styled.h1``;
+const TodoHeading = styled.h1`
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  line-height: 28px;
+`;
 const TodoSection = styled.div`
   margin-top: 1rem;
   display: flex;
