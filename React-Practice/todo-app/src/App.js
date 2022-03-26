@@ -1,5 +1,8 @@
-function App() {
-  return <h1>This is Todo app....</h1>;
-}
+import React from "react";
+import Todo from "./components/Todo";
+
+const App = () => {
+  return <Todo />;
+};
 
 export default App;

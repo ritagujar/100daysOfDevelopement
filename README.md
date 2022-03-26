@@ -318,7 +318,7 @@ Day-48 -
 
 Created Crud App -\
 API Call using Axios.\
-Axios - GET, POST, EDIT, DELETE.\
+Axios - GET, POST, EDIT, DELETE.
 
 ### React Practice
 
@@ -326,12 +326,12 @@ Day-49, 50 -
 
 Created Login UI -\
 Added NavBar\
-Added Left-Right Login\
+Added Left-Right Login
 
 Day-51, 52 -
 
 Added Footer\
-CSS Effects\
+CSS Effects
 
 Day-53 -
 
