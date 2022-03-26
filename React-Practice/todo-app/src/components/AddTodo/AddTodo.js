@@ -32,6 +32,7 @@ const Button = styled.button`
   border-radius: 0.4rem;
   background: #92dff3;
   border: 1px solid #92dff3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 
   &:hover {
     border: none;
