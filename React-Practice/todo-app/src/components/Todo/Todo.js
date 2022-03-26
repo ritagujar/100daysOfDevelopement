@@ -33,12 +33,21 @@ const Todo = () => {
     });
   };
 
+  const deleteTodoHandler = (todoId) => {
+    setAddTodos((prevTodos) => {
+      const updatedTodos = prevTodos.filter((todo) => todo.id !== todoId);
+      return updatedTodos;
+    });
+  };
+
   let content = (
     <p style={{ textAlign: "center" }}>No goals found. Maybe add one?</p>
   );
 
   if (addTodos.length > 0) {
-    content = <TodoList todoItems={addTodos} />;
+    content = (
+      <TodoList todoItems={addTodos} onDeleteTodo={deleteTodoHandler} />
+    );
   }
 
   return (

@@ -14,7 +14,14 @@ const TodoListItemsSection = styled.div`
 `;
 
 const TodoListItems = (props) => {
-  return <TodoListItemsSection>{props.children}</TodoListItemsSection>;
+  const deleteHandler = () => {
+    props.onDelete(props.id);
+  };
+  return (
+    <TodoListItemsSection onClick={deleteHandler}>
+      {props.children}
+    </TodoListItemsSection>
+  );
 };
 
 export default TodoListItems;

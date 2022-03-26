@@ -16,7 +16,7 @@ const TodoList = (props) => {
   return (
     <TodoListSection>
       {props.todoItems.map((todo) => (
-        <TodoListItems key={todo.id} id={todo.id}>
+        <TodoListItems key={todo.id} id={todo.id} onDelete={props.onDeleteTodo}>
           {todo.text}
         </TodoListItems>
       ))}
