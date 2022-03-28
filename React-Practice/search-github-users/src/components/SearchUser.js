@@ -14,6 +14,16 @@ const SearchSection = styled.div`
     border: 1px solid var(--color-gray);
     border-radius: 0.2rem;
     padding-left: 1rem;
+
+    @media screen and (max-width: 900px) {
+      height: 2rem;
+      width: 18rem;
+    }
+    @media screen and (max-width: 450px) {
+      height: 2rem;
+      width: 12rem;
+      font-size: 1rem;
+    }
   }
 
   input:focus {
@@ -33,6 +43,16 @@ const SearchSection = styled.div`
     color: var(--color-black);
     font-family: var(--font-base);
     background-color: var(--color-crimson);
+
+    @media screen and (max-width: 900px) {
+      height: 2rem;
+      width: 6rem;
+    }
+    @media screen and (max-width: 450px) {
+      height: 2rem;
+      width: 5rem;
+      font-size: 1.1rem;
+    }
   }
 
   button:hover {

@@ -25,11 +25,17 @@ const Heading = styled.div`
     font-size: 2.1rem;
     letter-spacing: 0.04rem;
     font-family: var(--font-base);
+    @media screen and (max-width: 900px) {
+      font-size: 1.6rem;
+    }
   }
 `;
 const Logo = styled.a`
   font-size: 2.5rem;
   margin-right: 0.5rem;
+  @media screen and (max-width: 900px) {
+    font-size: 1.6rem;
+  }
 `;
 
 const Navbar = () => {
