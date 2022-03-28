@@ -8,7 +8,7 @@ const NavbarSection = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 4.5rem;
+  height: 5.5rem;
   background-color: var(--color-black);
 
   @media screen and (max-width: 650px) {
@@ -23,6 +23,7 @@ const Heading = styled.div`
 
   h1 {
     font-size: 2.1rem;
+    letter-spacing: 0.04rem;
     font-family: var(--font-base);
   }
 `;
