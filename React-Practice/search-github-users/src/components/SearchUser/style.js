@@ -1,12 +1,11 @@
-import React from "react";
 import styled from "styled-components";
 
-const SearchSection = styled.div`
+export const SearchSection = styled.div`
   input {
     width: 25rem;
     height: 2.7rem;
     margin-right: 0.4rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: var(--font-alt);
     letter-spacing: 0.04rem;
     outline: none;
@@ -59,16 +58,3 @@ const SearchSection = styled.div`
     background-color: var(--color-golden-light);
   }
 `;
-
-const SearchUser = () => {
-  return (
-    <SearchSection>
-      <form action="">
-        <input type="text" placeholder="Search username" />
-        <button type="search">Search</button>
-      </form>
-    </SearchSection>
-  );
-};
-
-export default SearchUser;

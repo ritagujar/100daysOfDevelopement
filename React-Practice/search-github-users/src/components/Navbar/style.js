@@ -1,9 +1,6 @@
-import React from "react";
 import styled from "styled-components";
-import { AiFillGithub } from "react-icons/ai";
-import SearchUser from "./SearchUser";
 
-const NavbarSection = styled.div`
+export const NavbarSection = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -16,7 +13,7 @@ const NavbarSection = styled.div`
     flex-direction: column;
   }
 `;
-const Heading = styled.div`
+export const Heading = styled.div`
   display: flex;
   align-items: center;
   color: var(--color-golden);
@@ -30,27 +27,10 @@ const Heading = styled.div`
     }
   }
 `;
-const Logo = styled.a`
+export const Logo = styled.a`
   font-size: 2.5rem;
   margin-right: 0.5rem;
   @media screen and (max-width: 900px) {
     font-size: 1.6rem;
   }
 `;
-
-const Navbar = () => {
-  return (
-    <NavbarSection>
-      <Heading>
-        <Logo>
-          {" "}
-          <AiFillGithub />
-        </Logo>
-        <h1>Search Github User</h1>
-      </Heading>
-      <SearchUser />
-    </NavbarSection>
-  );
-};
-
-export default Navbar;
