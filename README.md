@@ -361,3 +361,10 @@ Day-59, 60 -
 Created TodoList -\
 TodoList UI\
 Features - AddTodo, Delete Todo
+
+Day - 61 -
+
+Created Search-github-user-\
+Created a navbar\
+Added Media Query\
+Used useState Hook
