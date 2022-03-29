@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiFillGithub } from "react-icons/ai";
 import SearchUser from "../SearchUser/SearchUser";
+import UserDetails from "../UserDetails/UserDetails";
 import { NavbarSection, Heading, Logo } from "./style";
 
 const Navbar = () => {
@@ -18,6 +19,7 @@ const Navbar = () => {
         </Heading>
         <SearchUser setUserData={setUserData} />
       </NavbarSection>
+      <UserDetails userData={userData} />
     </>
   );
 };
