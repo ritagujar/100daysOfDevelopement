@@ -362,9 +362,15 @@ Created TodoList -\
 TodoList UI\
 Features - AddTodo, Delete Todo
 
-Day - 61 -
+Day-61 -
 
 Created Search-github-user-\
 Created a navbar\
+Used Styled Component\
 Added Media Query\
-Used useState Hook
+Used useState Hook to store the data from api
+
+Day-62 -
+
+Used Axios to call github api\
+Displayed the data from api
