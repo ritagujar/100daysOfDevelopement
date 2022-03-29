@@ -18,7 +18,6 @@ const Navbar = () => {
         </Heading>
         <SearchUser setUserData={setUserData} />
       </NavbarSection>
-      {userData.login}
     </>
   );
 };
