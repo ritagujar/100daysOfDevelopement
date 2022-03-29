@@ -6,9 +6,8 @@ const github = axios.create({
   baseURL: "https://api.github.com/",
 });
 
-const SearchUser = () => {
+const SearchUser = ({ setUserData }) => {
   const [user, setUser] = useState("");
-  const [userData, setUserData] = useState([]);
 
   const onSubmitHandler = async (event) => {
     event.preventDefault();
