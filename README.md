@@ -374,3 +374,10 @@ Day-62 -
 
 Used Axios to call github api\
 Displayed the data from api
+
+Day-63 -
+
+React-ui-ux -\
+Added Navbar\
+Added Header Section\
+Mobile Responsive
