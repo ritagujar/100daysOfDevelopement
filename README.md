@@ -2,13 +2,13 @@
 
 ## HTML
 
-### Day-1 -
+#### Day-1 -
 
 HTML Tags,
-Heading,
+Heading,\
 Paragraph,
-Image.
-Lists,
+Image
+Lists,\
 Block vs Inline Block,
 Hyperlinks.
 
