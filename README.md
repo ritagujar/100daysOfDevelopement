@@ -1,15 +1,17 @@
 ## 100DaysOfDEvelopement
 
-### HTML
+## HTML
 
-Day-1 -
-HTML Tags,
-Heading,
-Paragraph,
-Image.\
-Lists,
-Block vs Inline Block,
-Hyperlinks.
+```
+###Day-1 -
+    HTML Tags,
+    Heading,
+    Paragraph,
+    Image.\
+    Lists,
+    Block vs Inline Block,
+    Hyperlinks.
+```
 
 Day-2 -
 Created Mini-Project,
