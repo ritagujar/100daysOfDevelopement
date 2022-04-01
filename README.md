@@ -12,7 +12,7 @@ Lists,\
 Block vs Inline Block,
 Hyperlinks.
 
-##### Day-2 -
+#### Day-2 -
 
 Created Mini-Project,
 Semantic Tags,\
@@ -380,9 +380,10 @@ Used useState Hook to store the data from api
 Used Axios to call github api\
 Displayed the data from api
 
-#### Day-63 -
+#### Day-63,64 -
 
 React-ui-ux -\
 Added Navbar\
 Added Header Section\
-Mobile Responsive
+Mobile Responsive\
+Completed Fully Responsive ui/ux React Site
