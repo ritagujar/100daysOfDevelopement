@@ -392,3 +392,8 @@ Completed Fully Responsive ui/ux React Site
 
 React + Tailwind\
 Created a Landing page
+
+#### DAy-67 -
+
+React + Tailwind\
+Created Image Seach using Pixabay API\
