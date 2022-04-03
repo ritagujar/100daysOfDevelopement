@@ -387,3 +387,8 @@ Added Navbar\
 Added Header Section\
 Mobile Responsive\
 Completed Fully Responsive ui/ux React Site
+
+#### Day-65,66-
+
+React + Tailwind\
+Created a Landing page
