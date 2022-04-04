@@ -388,12 +388,16 @@ Added Header Section\
 Mobile Responsive\
 Completed Fully Responsive ui/ux React Site
 
+## React + Tailwind
+
 #### Day-65,66-
 
-React + Tailwind\
 Created a Landing page
 
-#### DAy-67 -
+#### Day-67 -
 
-React + Tailwind\
 Created Image Seach using Pixabay API\
+
+#### Day-68 -
+
+Created a UI Design with React+Tailwind
