@@ -1,23 +1,22 @@
 import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { AddTodoAction } from "../TodoActions";
+
 import "./style.css";
 
 const AddTodo = () => {
   const [todo, setTodo] = useState("");
-  const [add, setAdd] = useState([]);
+
+  const dispatch = useDispatch();
+
+  const Todo = useSelector((state) => state.Todo);
+
+  const { todos } = Todo;
 
   const submitHandler = (event) => {
     event.preventDefault();
-    const updatedTodo = {
-      content: todo,
-      id: Math.random().toString(),
-    };
-    setAdd([...add, updatedTodo]);
+    dispatch(AddTodoAction(todo));
     setTodo("");
-  };
-
-  const updatedTodo = (id) => {
-    const updatedTodo = add.filter((i) => i.id !== id);
-    setAdd(updatedTodo);
   };
 
   return (
@@ -33,13 +32,7 @@ const AddTodo = () => {
         </div>
       </form>
       <div className="add_section">
-        {add.map((item) => (
-          <>
-            <p key={item.id} onClick={() => updatedTodo(item.id)}>
-              {item.content}
-            </p>
-          </>
-        ))}
+        {todos && todos.map((items) => <p key={items.id}>{items.todo}</p>)}
       </div>
     </div>
   );
