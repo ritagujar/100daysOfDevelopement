@@ -396,8 +396,13 @@ Created a Landing page
 
 #### Day-67 -
 
-Created Image Seach using Pixabay API\
+Created Image Seach using Pixabay API
 
 #### Day-68 -
 
 Created a UI Design with React+Tailwind
+
+### Day-69 -
+
+Todo App\
+Practice Redux and Redux-thunk
