@@ -15,6 +15,11 @@ const AddTodo = () => {
     setTodo("");
   };
 
+  const updatedTodo = (id) => {
+    const updatedTodo = add.filter((i) => i.id !== id);
+    setAdd(updatedTodo);
+  };
+
   return (
     <div className="container">
       <form onSubmit={submitHandler}>
@@ -29,7 +34,11 @@ const AddTodo = () => {
       </form>
       <div className="add_section">
         {add.map((item) => (
-          <p key={item.id}>{item.content}</p>
+          <>
+            <p key={item.id} onClick={() => updatedTodo(item.id)}>
+              {item.content}
+            </p>
+          </>
         ))}
       </div>
     </div>
