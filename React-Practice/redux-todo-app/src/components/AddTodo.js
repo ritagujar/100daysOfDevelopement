@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { AddTodoAction } from "../TodoActions";
+import { AddTodoAction, RemoveTodoAction } from "../TodoActions";
 
 import "./style.css";
 
@@ -19,6 +19,10 @@ const AddTodo = () => {
     setTodo("");
   };
 
+  const deleteTodoHandler = (item) => {
+    dispatch(RemoveTodoAction(item));
+  };
+
   return (
     <div className="container">
       <form onSubmit={submitHandler}>
@@ -32,7 +36,12 @@ const AddTodo = () => {
         </div>
       </form>
       <div className="add_section">
-        {todos && todos.map((items) => <p key={items.id}>{items.todo}</p>)}
+        {todos &&
+          todos.map((items) => (
+            <p key={items.id} onClick={() => deleteTodoHandler(items)}>
+              {items.todo}
+            </p>
+          ))}
       </div>
     </div>
   );
