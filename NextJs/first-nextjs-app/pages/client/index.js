@@ -23,7 +23,18 @@ function ClientPage() {
       <ul>
         {clients.map((client) => (
           <li key={client.id}>
-            <Link href={`/client/${client.id}`}>{client.name}</Link>
+            {/* <Link href={`/client/${client.id}`}>{client.name}</Link> */}
+
+            {/* Altermative way of Setting a Link Hrefs */}
+
+            <Link
+              href={{
+                pathname: "client/[id]",
+                query: { id: client.id },
+              }}
+            >
+              {client.name}
+            </Link>
           </li>
         ))}
       </ul>
