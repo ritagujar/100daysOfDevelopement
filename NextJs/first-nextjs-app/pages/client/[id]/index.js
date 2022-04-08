@@ -7,9 +7,22 @@ function ClientProjectPage() {
 
   console.log(router.query);
 
+  // Navigate Programatically
+  function loadProjectHandler() {
+    // router.push("/client/max/projecta");
+
+    // or
+
+    router.push({
+      pathname: "/client/[id]/[clientprojectid]",
+      query: { id: "max", clientprojectid: "projecta" },
+    });
+  }
+
   return (
     <div>
       <h1>The Client Project Page</h1>
+      <button onClick={loadProjectHandler}>Load Project A</button>
     </div>
   );
 }
