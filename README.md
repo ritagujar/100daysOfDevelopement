@@ -402,12 +402,14 @@ Created Image Seach using Pixabay API
 
 Created a UI Design with React+Tailwind
 
-### Day-69 -
+#### Day-69 -
 
 Todo App\
 Practice Redux and Redux-thunk
 
 ## NextJs
+
+#### Day-70 -
 
 Basics of NextJs\
 Creating NextJs project\
@@ -415,14 +417,14 @@ NextJs Routing\
 File Based Routing & Code Based Routing\
 Static and Dynamic Routes\
 Nested Paths & Routes\
-Dynamic Paths & Routes\
+Dynamic Paths & Routes
 
 Hooks - \
 useRouter() -> router.pathname, router.query\
 Nested Dynamic Routes\
-Catch-all/Collect-all Routes - [...slug].js\
+Catch-all/Collect-all Routes - [...slug].js
 
 Navigate Between Pages\
-Navigate With Link Component & to Dynamic Routes\
+Navigate With Link Component & to Dynamic Routes
 
 Adding Custom 404(Not Found) Page
