@@ -428,3 +428,13 @@ Navigate Between Pages\
 Navigate With Link Component & to Dynamic Routes
 
 Adding Custom 404(Not Found) Page
+
+#### Day - 71
+
+Event-app - \
+Applyed Whatever Learned
+
+Page re-rendering & Data Featching -\
+Static Generation\
+getStaticProps()\
+Incremental Static Re-Generation (ISR)
