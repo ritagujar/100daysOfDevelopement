@@ -12,13 +12,13 @@
 .item img {
   width: 100%;
   object-fit: cover;
-  height: 14rem;
+  height: 15rem;
 }
 
 .content {
   width: 100%;
   padding: 0 1rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .content h2 {
@@ -52,8 +52,9 @@
 
 .actions {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   padding: 1rem;
+  justify-content: flex-end;
 }
 
 .actions a {
