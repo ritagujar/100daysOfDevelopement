@@ -438,3 +438,15 @@ Page re-rendering & Data Featching -\
 Static Generation\
 getStaticProps()\
 Incremental Static Re-Generation (ISR)
+
+#### Day - 72
+
+getStaticPaths()\
+getStaticProps()\
+Fallback pages - true, false, blocking\
+getServerSideProps()
+
+#### Day - 73
+
+Client-side Data Fetching\
+useSWR() - Hook
