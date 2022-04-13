@@ -18,6 +18,9 @@ export async function getStaticProps() {
       events: featuredEvents,
     },
   };
+
+  // It will regerate the page every 30min
+  revalidate: 1800;
 }
 
 export default HomePage;
