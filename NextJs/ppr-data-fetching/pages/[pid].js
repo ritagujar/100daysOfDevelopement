@@ -4,6 +4,12 @@ import fs from "fs/promises";
 function ProductDetailPage(props) {
   const { loadedProducts } = props;
 
+  //   We have write this fallback check if we set fallback to true
+  // If we set fallback to blocking we dont need this fallback check
+  //   if (!loadedProducts) {
+  //     return <p>Loading....</p>;
+  //   }
+
   return (
     <>
       <h1>{loadedProducts.title}</h1>
@@ -32,13 +38,9 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   return {
-    paths: [
-      { params: { pid: "p1" } },
-      { params: { pid: "p2" } },
-      { params: { pid: "p3" } },
-    ],
+    paths: [{ params: { pid: "p1" } }],
 
-    fallback: false,
+    fallback: "blocking",
   };
 }
 
