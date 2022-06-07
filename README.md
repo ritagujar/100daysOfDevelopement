@@ -450,3 +450,11 @@ getServerSideProps()
 
 Client-side Data Fetching\
 useSWR() - Hook
+
+#### Day - 74
+
+Use of noFound and redirect\
+getStaticProps() for dynamic pages\
+getStaticPaths()\
+Fallback pages\
+getStaticPaths & Link Prefetching Behind The Scenes working
