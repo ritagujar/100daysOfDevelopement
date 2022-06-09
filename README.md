@@ -458,3 +458,9 @@ getStaticProps() for dynamic pages\
 getStaticPaths()\
 Fallback pages\
 getStaticPaths & Link Prefetching Behind The Scenes working
+
+#### Day - 75
+
+Loading Paths Dynamically\
+Fallback Page & NotFound Page\
+getServerSideProps() for SSR
