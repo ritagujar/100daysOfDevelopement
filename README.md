@@ -464,3 +464,9 @@ getStaticPaths & Link Prefetching Behind The Scenes working
 Loading Paths Dynamically\
 Fallback Page & NotFound Page\
 getServerSideProps() for SSR
+
+#### Day - 76
+
+Client-Side Data Fetching\
+Use of useSWR() Hook\
+Pre-Fetching with Client-Side Data Fetching
