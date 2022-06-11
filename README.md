@@ -470,3 +470,12 @@ getServerSideProps() for SSR
 Client-Side Data Fetching\
 Use of useSWR() Hook\
 Pre-Fetching with Client-Side Data Fetching
+
+#### Day - 77
+
+Learned about optimizing Nextjs app\
+3. Configuring the head Content\
+4. Adding Dynamic head Content\
+Reusing the logic\
+Working with \_app.js file\
+optimizing images with Next Image
