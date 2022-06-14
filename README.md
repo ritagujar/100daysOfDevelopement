@@ -474,8 +474,14 @@ Pre-Fetching with Client-Side Data Fetching
 #### Day - 77
 
 Learned about optimizing Nextjs app\
-3. Configuring the head Content\
-4. Adding Dynamic head Content\
+Configuring the head Content\
+Adding Dynamic head Content\
 Reusing the logic\
 Working with \_app.js file\
 optimizing images with Next Image
+
+#### Day - 78
+
+Created API Routes Project\
+Added First API Routes to Project\
+Prepared The Front End Form
