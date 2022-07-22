@@ -1,11 +1,46 @@
 import FeaturedPosts from "../components/home-page/featured-posts";
 import Hero from "../components/home-page/hero";
 
+const DUMMY_POSTS = [
+  {
+    slug: "getting-started-with-nextjs",
+    title: "Getting Started with NextJs",
+    image: "getting-started-nextjs.png",
+    excert:
+      "NextJs is a framework for production - it makes building fullstack React apps and sited a breeze and ships with built-in SSR.",
+    data: "2022-02-10",
+  },
+  {
+    slug: "getting-started-with-nextjs2",
+    title: "Getting Started with NextJs",
+    image: "getting-started-nextjs.png",
+    excert:
+      "NextJs is a framework for production - it makes building fullstack React apps and sited a breeze and ships with built-in SSR.",
+    data: "2022-02-10",
+  },
+  {
+    slug: "getting-started-with-nextjs3",
+    title: "Getting Started with NextJs",
+    image: "getting-started-nextjs.png",
+    excert:
+      "NextJs is a framework for production - it makes building fullstack React apps and sited a breeze and ships with built-in SSR.",
+    data: "2022-02-10",
+  },
+  {
+    slug: "getting-started-with-nextjs4",
+    title: "Getting Started with NextJs",
+    image: "getting-started-nextjs.png",
+    excert:
+      "NextJs is a framework for production - it makes building fullstack React apps and sited a breeze and ships with built-in SSR.",
+    data: "2022-02-10",
+  },
+];
+
 function HomePage() {
   return (
     <>
       <Hero />
-      <FeaturedPosts />
+      <FeaturedPosts posts={DUMMY_POSTS} />
     </>
   );
 }
