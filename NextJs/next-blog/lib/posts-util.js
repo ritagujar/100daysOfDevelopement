@@ -9,7 +9,7 @@ function getPostData(fileName) {
   const fileContent = fs.readFileSync(filePath, "utf-8");
   const { data, content } = matter(fileContent);
 
-  const postSlug = fileName.replace(/\/.md$/, ""); // Removes the file extension
+  const postSlug = fileName.replace(/\.md$/, ""); // Removes the file extension
 
   const postData = {
     slug: postSlug,
