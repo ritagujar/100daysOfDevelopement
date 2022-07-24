@@ -485,3 +485,7 @@ optimizing images with Next Image
 Created API Routes Project\
 Added First API Routes to Project\
 Prepared The Front End Form
+
+### Day - 79
+
+Started with the next-blog project
