@@ -488,4 +488,5 @@ Prepared The Front End Form
 
 ### Day - 79
 
+Learn about Using API Routes For Pre-Rendering Pages\
 Started with the next-blog project
