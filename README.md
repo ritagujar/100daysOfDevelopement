@@ -493,4 +493,5 @@ Started with the next-blog project
 
 ### Day - 80
 
-Learn about Rendering Markdown as JSX
+Learn about Rendering Markdown as JSX\
+Used Markdown for Rendering Posts
