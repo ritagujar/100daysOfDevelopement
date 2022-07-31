@@ -490,3 +490,7 @@ Prepared The Front End Form
 
 Learn about Using API Routes For Pre-Rendering Pages\
 Started with the next-blog project
+
+### Day - 80
+
+Learn about Rendering Markdown as JSX
