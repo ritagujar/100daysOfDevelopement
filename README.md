@@ -495,3 +495,9 @@ Started with the next-blog project
 
 Learn about Rendering Markdown as JSX\
 Used Markdown for Rendering Posts
+
+### Day - 81
+
+Work on next-blog project\
+Learn About Next Image Component\
+Rendered Image with next Image Component
