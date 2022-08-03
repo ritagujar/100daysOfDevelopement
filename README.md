@@ -432,7 +432,7 @@ Adding Custom 404(Not Found) Page
 #### Day - 71
 
 Event-app - \
-Applyed Whatever Learned
+Applying Whatever Learned
 
 Page re-rendering & Data Featching -\
 Static Generation\
