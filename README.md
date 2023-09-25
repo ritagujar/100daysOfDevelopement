@@ -9,7 +9,7 @@ Heading,\
 Paragraph,
 Image
 Lists,\
-Block vs Inline Block,
+Block vs Inline Block,\
 Hyperlinks.
 
 #### Day-2 -
