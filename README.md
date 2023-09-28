@@ -16,7 +16,7 @@ Hyperlinks.
 
 Created Mini-Project,
 Semantic Tags,\
-Table,
+Table,\
 Forms.
 
 #### Day-3 -
