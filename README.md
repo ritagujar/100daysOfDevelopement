@@ -54,7 +54,7 @@ TRANSFORM PROPERTIES,
 TRANSITION PROPERTIES,
 ANIMATION PROPERTY.
 
-### JavaScript
+## JavaScript
 
 #### Day-6 -
 
