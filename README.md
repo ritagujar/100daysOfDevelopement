@@ -12,7 +12,7 @@ Lists,\
 Block vs Inline Block,\
 Hyperlinks.
 
-#### Day-2 -
+### Day-2 -
 
 Created Mini-Project,
 Semantic Tags,\
